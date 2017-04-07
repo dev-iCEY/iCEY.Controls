@@ -1,0 +1,51 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="../Colors.xaml"/>
+    </ResourceDictionary.MergedDictionaries>
+    <Style TargetType="{x:Type Button}">
+        <Setter Property="OverridesDefaultStyle" Value="True"/>
+        <Setter Property="Padding" Value="12 10 12 9" />
+        <Setter Property="MinWidth" Value="100"/>
+        <Setter Property="SnapsToDevicePixels" Value="True"/>
+        <Setter Property="VerticalContentAlignment" Value="Center"/>
+        <Setter Property="HorizontalContentAlignment" Value="Center"/>
+        <Setter Property="RenderOptions.ClearTypeHint" Value="Enabled"/>
+        <Setter Property="RenderOptions.BitmapScalingMode" Value="Fant"/>
+        <Setter Property="FontSize" Value="12"/>
+        <Setter Property="FontFamily" Value="/Yume.Controls;component/Fonts/OpenSans/#Open Sans"/>
+        <Setter Property="FontWeight" Value="Normal"/>
+        <Setter Property="Cursor" Value="Hand"/>
+        <Setter Property="Background" Value="{DynamicResource DefaultBackgroundColorBrush}"/>
+        <Setter Property="Foreground" Value="{DynamicResource DefaultForegroundColorBrush}"/>
+        <Setter Property="BorderBrush" Value="{DynamicResource DefaultBorderColorBrush}"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border Padding="{TemplateBinding Padding}" x:Name="Border" BorderThickness="1" BorderBrush="{TemplateBinding BorderBrush}" Background="{TemplateBinding Background}" CornerRadius="2">
+                        <ContentPresenter VerticalAlignment="{TemplateBinding VerticalContentAlignment}" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" />
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <EventTrigger RoutedEvent="Button.MouseEnter">
+                            <BeginStoryboard>
+                                <Storyboard>
+                                    <ColorAnimation Storyboard.TargetName="Border"
+                                                    To="{StaticResource DefaultBackgroundHoverColor}" 
+                                                    Storyboard.TargetProperty="(Button.Background).(SolidColorBrush.Color)"
+                                                    FillBehavior="HoldEnd"
+                                                    Duration="0:0:0.200"/>
+                                    <ColorAnimation Storyboard.TargetName="Border"
+                                                    To="{StaticResource DefaultBorderHoverColor}"
+                                                    Storyboard.TargetProperty="(Button.BorderBrush).(SolidColorBrush.Color)"
+                                                    FillBehavior="HoldEnd"
+                                                    Duration="0:0:0.200"/>
+                                </Storyboard>
+                            </BeginStoryboard>
+                        </EventTrigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+</ResourceDictionary>

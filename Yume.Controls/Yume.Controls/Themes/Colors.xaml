@@ -1,0 +1,17 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Color x:Key="DefaultBackgroundHoverColor">#FFF2F2F2</Color>
+    <Color x:Key="DefaultBorderHoverColor">#FFA8B0C2</Color>
+
+    <Color x:Key="DefaultBackgroundColor">#FFFFFFFF</Color>
+    <Color x:Key="DefaultForegroundColor">#FF696C74</Color>
+    <Color x:Key="DefaultBorderColor">#FFBDC3D1</Color>
+
+    <SolidColorBrush x:Key="DefaultBackgroundColorBrush" Color="{StaticResource DefaultBackgroundColor}"/>
+    <SolidColorBrush x:Key="DefaultBorderColorBrush" Color="{StaticResource DefaultBorderColor}"/>
+    <SolidColorBrush x:Key="DefaultForegroundColorBrush" Color="{StaticResource DefaultForegroundColor}"/>
+
+    <SolidColorBrush x:Key="DefaultBgHColorBrush" Color="{StaticResource DefaultBackgroundHoverColor}"/>
+    <SolidColorBrush x:Key="DefaultBrHColorBrush" Color="{StaticResource DefaultBorderHoverColor}"/>
+
+</ResourceDictionary>

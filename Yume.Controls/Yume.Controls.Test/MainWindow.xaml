@@ -1,0 +1,24 @@
+﻿<Window x:Class="Yume.Controls.Test.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Yume.Controls.Test"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525" RenderOptions.BitmapScalingMode="Fant" RenderOptions.CachingHint="Cache">
+    <ItemsControl>
+        <ItemsControl.Template>
+            <ControlTemplate>
+                <Border Padding="1">
+                    <WrapPanel IsItemsHost="True"/>
+                </Border>
+            </ControlTemplate>
+        </ItemsControl.Template>
+        <Button Content="Defaults" Margin="2.5" VerticalAlignment="Center" HorizontalAlignment="Center" />
+        <Button Content="Defaultsasdasd" Margin="2.5" VerticalAlignment="Center" HorizontalAlignment="Center" />
+        <Button Content="Defaultasdasd" Margin="2.5" VerticalAlignment="Center" HorizontalAlignment="Center" />
+        <Button Content="Default" Margin="2.5" VerticalAlignment="Center" HorizontalAlignment="Center" />
+        <Button Content="Default" Margin="2.5" VerticalAlignment="Center" HorizontalAlignment="Center" />
+        <Button Content="Default" Margin="2.5" VerticalAlignment="Center" HorizontalAlignment="Center" />
+    </ItemsControl>
+</Window>
