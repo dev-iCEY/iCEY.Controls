@@ -6,19 +6,26 @@
         xmlns:local="clr-namespace:Yume.Controls.Test"
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525" RenderOptions.BitmapScalingMode="Fant" RenderOptions.CachingHint="Cache">
-    <ItemsControl>
-        <ItemsControl.Template>
-            <ControlTemplate>
-                <Border Padding="1">
-                    <WrapPanel IsItemsHost="True"/>
-                </Border>
-            </ControlTemplate>
-        </ItemsControl.Template>
-        <Button Content="Default" Margin="2.5" VerticalAlignment="Center" HorizontalAlignment="Center" />
-        <Button Content="Primary" Style="{StaticResource PrimaryBtn}" Margin="2.5" VerticalAlignment="Center" HorizontalAlignment="Center" />
-        <Button Content="Success" Style="{StaticResource SuccessBtn}" Margin="2.5" VerticalAlignment="Center" HorizontalAlignment="Center" />
-        <Button Content="Warning" Style="{StaticResource WarningBtn}" Margin="2.5" VerticalAlignment="Center" HorizontalAlignment="Center" />
-        <Button Content="Danger" Style="{StaticResource DangerBtn}" Margin="2.5" VerticalAlignment="Center" HorizontalAlignment="Center" />
-        <Button Content="Info" Style="{StaticResource InfoBtn}" Margin="2.5" VerticalAlignment="Center" HorizontalAlignment="Center" />
-    </ItemsControl>
+    <StackPanel Orientation="Vertical" ScrollViewer.CanContentScroll="True" ScrollViewer.VerticalScrollBarVisibility="Auto">
+        <Expander Header="Buttons" Padding="2.5" Margin="2.5" BorderThickness="2" BorderBrush="{DynamicResource DefaultBackgroundColorBrush}">
+            <StackPanel Orientation="Vertical" Margin="2.5" IsEnabled="{Binding ElementName=SetBtnValue, Path=IsChecked}">
+                <ItemsControl Margin="2.5">
+                    <ItemsControl.Template>
+                        <ControlTemplate>
+                            <Border Padding="1">
+                                <WrapPanel IsItemsHost="True"/>
+                            </Border>
+                        </ControlTemplate>
+                    </ItemsControl.Template>
+                    <Button Content="Default" Margin="2.5" VerticalAlignment="Center" HorizontalAlignment="Center" />
+                    <Button Content="Primary" Style="{StaticResource PrimaryBtn}" Margin="2.5" VerticalAlignment="Center" HorizontalAlignment="Center" />
+                    <Button Content="Success" Style="{StaticResource SuccessBtn}" Margin="2.5" VerticalAlignment="Center" HorizontalAlignment="Center" />
+                    <Button Content="Warning" Style="{StaticResource WarningBtn}" Margin="2.5" VerticalAlignment="Center" HorizontalAlignment="Center" />
+                    <Button Content="Danger" Style="{StaticResource DangerBtn}" Margin="2.5" VerticalAlignment="Center" HorizontalAlignment="Center" />
+                    <Button Content="Info" Style="{StaticResource InfoBtn}" Margin="2.5" VerticalAlignment="Center" HorizontalAlignment="Center" />
+                </ItemsControl>
+                <CheckBox Margin="5" x:Name="SetBtnValue" Content="Enable all buttons" IsChecked="True" />
+            </StackPanel>
+        </Expander>
+    </StackPanel>
 </Window>

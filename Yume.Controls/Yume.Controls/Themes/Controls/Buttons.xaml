@@ -96,6 +96,9 @@
             <Trigger Property="IsEnabled" Value="False">
                 <Setter Property="Opacity" Value=".6"/>
             </Trigger>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter Property="Cursor" Value="Hand"/>
+            </Trigger>
         </Style.Triggers>
     </Style>
     
