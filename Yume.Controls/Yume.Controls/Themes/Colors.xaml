@@ -1,9 +1,14 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
     
+    <!--#region Default Colors-->
     <Color x:Key="DefaultBackgroundHoverColor">#FFF2F2F2</Color>
     <Color x:Key="DefaultBorderHoverColor">#FFA8B0C2</Color>
     <Color x:Key="DefaultForegroundHoverColor">#FF696C74</Color>
+
+    <Color x:Key="DefaultBackgroundFocusColor">#FFEDEDED</Color>
+    <Color x:Key="DefaultBorderFocusColor">#FF818DA7</Color>
+    <Color x:Key="DefaultForegroundFocusColor">#FF696C74</Color>
 
     <Color x:Key="DefaultBackgroundDownColor">#FFEDEDED</Color>
     <Color x:Key="DefaultBorderDownColor">#FFA8B0C2</Color>
@@ -24,5 +29,106 @@
     <SolidColorBrush x:Key="DefaultBackgroundDownColorBrush" Color="{StaticResource DefaultBackgroundDownColor}"/>
     <SolidColorBrush x:Key="DefaultBorderDownColorBrush" Color="{StaticResource DefaultBorderDownColor}"/>
     <SolidColorBrush x:Key="DefaultForegroundDownColorBrush" Color="{StaticResource DefaultForegroundDownColor}"/>
+    <!--#endregion-->
+    
+    <!--#region Primary Colors-->
+
+    <Color x:Key="PrimaryBackgroundColor">#FF2574AB</Color>
+    <Color x:Key="PrimaryBorderColor">Transparent</Color>
+    <Color x:Key="PrimaryForegroundColor">#FFFFFFFF</Color>
+
+    <Color x:Key="PrimaryBackgroundHoverColor">#FF206696</Color>
+    <Color x:Key="PrimaryBorderHoverColor">Transparent</Color>
+    <Color x:Key="PrimaryForegrHoveroundColor">#FFFFFFFF</Color>
+
+    <Color x:Key="PrimaryBackgroundDownColor">#FF1F608E</Color>
+    <Color x:Key="PrimaryBorderDownColor">Transparent</Color>
+    <Color x:Key="PrimaryForegroundDownColor">#FFFFFFFF</Color>
+
+    <SolidColorBrush x:Key="PrimaryBackgroundColorBrush" Color="{StaticResource PrimaryBackgroundColor}"/>
+    <SolidColorBrush x:Key="PrimaryBorderColorBrush" Color="{StaticResource PrimaryBorderColor}"/>
+    <SolidColorBrush x:Key="PrimaryForegroundColorBrush" Color="{StaticResource PrimaryForegroundColor}"/>
+
+    <!--#endregion-->
+
+    <!--#region Success Colors-->
+
+    <Color x:Key="SuccessBackgroundColor">#FF259DAB</Color>
+    <Color x:Key="SuccessBorderColor">Transparent</Color>
+    <Color x:Key="SuccessForegroundColor">#FFFFFFFF</Color>
+
+    <Color x:Key="SuccessBackgroundHoverColor">#FF208A96</Color>
+    <Color x:Key="SuccessBorderHoverColor">Transparent</Color>
+    <Color x:Key="SuccessForegrHoveroundColor">#FFFFFFFF</Color>
+
+    <Color x:Key="SuccessBackgroundDownColor">#FF1F828E</Color>
+    <Color x:Key="SuccessBorderDownColor">Transparent</Color>
+    <Color x:Key="SuccessForegroundDownColor">#FFFFFFFF</Color>
+
+    <SolidColorBrush x:Key="SuccessBackgroundColorBrush" Color="{StaticResource SuccessBackgroundColor}"/>
+    <SolidColorBrush x:Key="SuccessBorderColorBrush" Color="{StaticResource SuccessBorderColor}"/>
+    <SolidColorBrush x:Key="SuccessForegroundColorBrush" Color="{StaticResource SuccessForegroundColor}"/>
+    
+    <!--#endregion-->
+
+    <!--#region Warning Colors-->
+
+    <Color x:Key="WarningBackgroundColor">#FFE6AD5C</Color>
+    <Color x:Key="WarningBorderColor">Transparent</Color>
+    <Color x:Key="WarningForegroundColor">#FFFFFFFF</Color>
+
+    <Color x:Key="WarningBackgroundHoverColor">#FFE3A246</Color>
+    <Color x:Key="WarningBorderHoverColor">Transparent</Color>
+    <Color x:Key="WarningForegrHoveroundColor">#FFFFFFFF</Color>
+
+    <Color x:Key="WarningBackgroundDownColor">#FFE19D3D</Color>
+    <Color x:Key="WarningBorderDownColor">Transparent</Color>
+    <Color x:Key="WarningForegroundDownColor">#FFFFFFFF</Color>
+
+    <SolidColorBrush x:Key="WarningBackgroundColorBrush" Color="{StaticResource WarningBackgroundColor}"/>
+    <SolidColorBrush x:Key="WarningBorderColorBrush" Color="{StaticResource WarningBorderColor}"/>
+    <SolidColorBrush x:Key="WarningForegroundColorBrush" Color="{StaticResource WarningForegroundColor}"/>
+
+    <!--#endregion-->
+
+    <!--#region Danger Colors-->
+
+    <Color x:Key="DangerBackgroundColor">#FFD9534F</Color>
+    <Color x:Key="DangerBorderColor">Transparent</Color>
+    <Color x:Key="DangerForegroundColor">#FFFFFFFF</Color>
+
+    <Color x:Key="DangerBackgroundHoverColor">#FFD43F3A</Color>
+    <Color x:Key="DangerBorderHoverColor">Transparent</Color>
+    <Color x:Key="DangerForegrHoveroundColor">#FFFFFFFF</Color>
+
+    <Color x:Key="DangerBackgroundDownColor">#FFD33632</Color>
+    <Color x:Key="DangerBorderDownColor">Transparent</Color>
+    <Color x:Key="DangerForegroundDownColor">#FFFFFFFF</Color>
+
+    <SolidColorBrush x:Key="DangerBackgroundColorBrush" Color="{StaticResource DangerBackgroundColor}"/>
+    <SolidColorBrush x:Key="DangerBorderColorBrush" Color="{StaticResource DangerBorderColor}"/>
+    <SolidColorBrush x:Key="DangerForegroundColorBrush" Color="{StaticResource DangerForegroundColor}"/>
+
+    <!--#endregion-->
+
+    <!--#region Info Colors-->
+
+    <Color x:Key="InfoBackgroundColor">#FF5BC0DE</Color>
+    <Color x:Key="InfoBorderColor">Transparent</Color>
+    <Color x:Key="InfoForegroundColor">#FFFFFFFF</Color>
+
+    <Color x:Key="InfoBackgroundHoverColor">#FF46B8DA</Color>
+    <Color x:Key="InfoBorderHoverColor">Transparent</Color>
+    <Color x:Key="InfoForegrHoveroundColor">#FFFFFFFF</Color>
+
+    <Color x:Key="InfoBackgroundDownColor">#FF3DB5D8</Color>
+    <Color x:Key="InfoBorderDownColor">Transparent</Color>
+    <Color x:Key="InfoForegroundDownColor">#FFFFFFFF</Color>
+
+    <SolidColorBrush x:Key="InfoBackgroundColorBrush" Color="{StaticResource InfoBackgroundColor}"/>
+    <SolidColorBrush x:Key="InfoBorderColorBrush" Color="{StaticResource InfoBorderColor}"/>
+    <SolidColorBrush x:Key="InfoForegroundColorBrush" Color="{StaticResource InfoForegroundColor}"/>
+
+    <!--#endregion-->
 
 </ResourceDictionary>
