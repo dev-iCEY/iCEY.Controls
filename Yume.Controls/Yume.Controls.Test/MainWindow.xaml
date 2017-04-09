@@ -8,8 +8,8 @@
         Title="MainWindow" Height="350" Width="525" RenderOptions.BitmapScalingMode="Fant" RenderOptions.CachingHint="Cache">
     <StackPanel Orientation="Vertical" ScrollViewer.CanContentScroll="True" ScrollViewer.VerticalScrollBarVisibility="Auto">
         <Expander Header="Buttons" Padding="2.5" Margin="2.5" BorderThickness="2" BorderBrush="{DynamicResource DefaultBackgroundColorBrush}">
-            <StackPanel Orientation="Vertical" Margin="2.5" IsEnabled="{Binding ElementName=SetBtnValue, Path=IsChecked}">
-                <ItemsControl Margin="2.5">
+            <StackPanel Orientation="Vertical" Margin="2.5">
+                <ItemsControl Margin="2.5" IsEnabled="{Binding ElementName=SetBtnValue, Path=IsChecked}">
                     <ItemsControl.Template>
                         <ControlTemplate>
                             <Border Padding="1">
