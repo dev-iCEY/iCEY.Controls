@@ -34,28 +34,31 @@
             <Expander Header="Sliders" Padding="2.5" Margin="2.5" BorderThickness="2"
                       BorderBrush="{DynamicResource DefaultBackgroundColorBrush}">
                 <StackPanel Orientation="Vertical" Margin="2.5">
-                    <StackPanel HorizontalAlignment="Left" IsEnabled="{Binding ElementName=SetSlidersValue, Path=IsChecked}">
+                    <StackPanel HorizontalAlignment="Left"
+                                IsEnabled="{Binding ElementName=SetSlidersValue, Path=IsChecked}">
                         <GroupBox Header="Default slider">
                             <StackPanel>
-                                <Slider Margin="2.5" Width="300"  />
+                                <Slider Margin="2.5" Width="300" />
                                 <Slider Style="{DynamicResource PrimarySlider}" Margin="2.5" Width="300" />
                             </StackPanel>
                         </GroupBox>
                         <GroupBox Header="TickPlacement TopLeft">
                             <StackPanel>
                                 <Slider Width="300" Margin="2.5" TickPlacement="TopLeft" />
-                                <Slider Style="{StaticResource PrimarySlider}" Width="300" Margin="2.5" TickPlacement="TopLeft" />
+                                <Slider Style="{StaticResource PrimarySlider}" Width="300" Margin="2.5"
+                                        TickPlacement="TopLeft" />
                             </StackPanel>
                         </GroupBox>
                         <GroupBox Header="TickPlacement BottomRight">
                             <StackPanel>
-                                <Slider Width="300"  Margin="2.5" TickPlacement="BottomRight" />
+                                <Slider Width="300" Margin="2.5" TickPlacement="BottomRight" />
                             </StackPanel>
                         </GroupBox>
                         <GroupBox Header=" TickPlacement Both">
                             <StackPanel>
                                 <Slider Width="300" Margin="2.5" TickPlacement="Both" />
-                                <Slider Style="{StaticResource PrimarySlider}" Width="300" Margin="2.5" TickPlacement="Both" />
+                                <Slider Style="{StaticResource PrimarySlider}" Width="300" Margin="2.5"
+                                        TickPlacement="Both" />
                             </StackPanel>
                         </GroupBox>
                     </StackPanel>

@@ -99,11 +99,11 @@
     <!--#region CheckBox-->
     <Color x:Key="CheckBoxBorderColor">#FFDBDFE6</Color>
 
-    <SolidColorBrush x:Key="CheckBoxBackgroundColorBrush" Color="{StaticResource In}" />
+    <!--SolidColorBrush x:Key="CheckBoxBackgroundColorBrush" Color="{StaticResource In}" /-->
     <!--#endregion-->
 
     <!--#region Slider-->
-    <SolidColorBrush x:Key="GlyphBrush" Color="#444"/>
+    <SolidColorBrush x:Key="GlyphBrush" Color="#444" />
 
     <Color x:Key="DefaultThumbColor">#FF909BB1</Color>
     <Color x:Key="DefaultSliderColor">#FFd8DCE3</Color>
