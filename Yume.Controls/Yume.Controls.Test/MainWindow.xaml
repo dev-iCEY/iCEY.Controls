@@ -14,9 +14,9 @@
                 </Border>
             </ControlTemplate>
         </ItemsControl.Template>
-        <Button Content="Defaults" Margin="2.5" VerticalAlignment="Center" HorizontalAlignment="Center" />
-        <Button Content="Defaultsasdasd" Margin="2.5" VerticalAlignment="Center" HorizontalAlignment="Center" />
-        <Button Content="Defaultasdasd" Margin="2.5" VerticalAlignment="Center" HorizontalAlignment="Center" />
+        <Button Content="Default" Margin="2.5" VerticalAlignment="Center" HorizontalAlignment="Center" />
+        <Button Content="Default" Margin="2.5" VerticalAlignment="Center" HorizontalAlignment="Center" />
+        <Button Content="Default" Margin="2.5" VerticalAlignment="Center" HorizontalAlignment="Center" />
         <Button Content="Default" Margin="2.5" VerticalAlignment="Center" HorizontalAlignment="Center" />
         <Button Content="Default" Margin="2.5" VerticalAlignment="Center" HorizontalAlignment="Center" />
         <Button Content="Default" Margin="2.5" VerticalAlignment="Center" HorizontalAlignment="Center" />
