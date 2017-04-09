@@ -6,13 +6,26 @@
         <ResourceDictionary Source="../Colors.xaml"/>
     </ResourceDictionary.MergedDictionaries>
     <!--#endregion-->
-    
+
+    <!--#region FocusVisualButton-->
+    <Style x:Key="BtnFocusVisual">
+        <Setter Property="Control.Template">
+            <Setter.Value>
+                <ControlTemplate>
+                    <Border>
+                        <Rectangle Margin="2" Stroke="#60000000" StrokeThickness="1" StrokeDashArray="1 2"/>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <!--#endregion-->
+
     <!--#region DefaultBtn-->
     
     <Style x:Key="DefaultBtn" TargetType="{x:Type Button}">
         <Setter Property="OverridesDefaultStyle" Value="True"/>
-        <Setter Property="TextOptions.TextRenderingMode" Value="ClearType"/>
-        <Setter Property="TextOptions.TextFormattingMode" Value="Display"/>
+        <Setter Property="FocusVisualStyle" Value="{DynamicResource BtnFocusVisual}"/>
         <Setter Property="Padding" Value="12 11 12 10" />
         <Setter Property="MinWidth" Value="100"/>
         <Setter Property="SnapsToDevicePixels" Value="True"/>
@@ -128,7 +141,6 @@
 
                                     <Storyboard>
                                         <ColorAnimation To="{StaticResource PrimaryBackgroundHoverColor}"  Storyboard.TargetName="Border"  Storyboard.TargetProperty="(Button.Background).(SolidColorBrush.Color)"/>
-                                        <ColorAnimation To="{StaticResource PrimaryBorderHoverColor}"  Storyboard.TargetName="Border"  Storyboard.TargetProperty="(Button.BorderBrush).(SolidColorBrush.Color)"/>
                                     </Storyboard>
 
                                 </VisualState>
@@ -137,7 +149,6 @@
 
                                     <Storyboard>
                                         <ColorAnimation To="{StaticResource PrimaryBackgroundDownColor}"  Storyboard.TargetName="Border"  Storyboard.TargetProperty="(Button.Background).(SolidColorBrush.Color)"/>
-                                        <ColorAnimation To="{StaticResource PrimaryBorderDownColor}"  Storyboard.TargetName="Border"  Storyboard.TargetProperty="(Button.BorderBrush).(SolidColorBrush.Color)"/>
                                     </Storyboard>
 
                                 </VisualState>
@@ -188,8 +199,8 @@
     
     <Style TargetType="{x:Type Button}" x:Key="SuccessBtn" BasedOn="{StaticResource DefaultBtn}">
         <Setter Property="Background" Value="{DynamicResource SuccessBackgroundColorBrush}"/>
-        <Setter Property="Foreground" Value="{DynamicResource SuccessForegroundColorBrush}"/>
-        <Setter Property="BorderBrush" Value="{DynamicResource SuccessBorderColorBrush}"/>
+        <Setter Property="Foreground" Value="{DynamicResource PrimaryForegroundColorBrush}"/>
+        <Setter Property="BorderBrush" Value="{DynamicResource PrimaryBorderColorBrush}"/>
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type Button}">
@@ -206,7 +217,6 @@
 
                                     <Storyboard>
                                         <ColorAnimation To="{StaticResource SuccessBackgroundHoverColor}"  Storyboard.TargetName="Border"  Storyboard.TargetProperty="(Button.Background).(SolidColorBrush.Color)"/>
-                                        <ColorAnimation To="{StaticResource SuccessBorderHoverColor}"  Storyboard.TargetName="Border"  Storyboard.TargetProperty="(Button.BorderBrush).(SolidColorBrush.Color)"/>
                                     </Storyboard>
 
                                 </VisualState>
@@ -215,7 +225,6 @@
 
                                     <Storyboard>
                                         <ColorAnimation To="{StaticResource SuccessBackgroundDownColor}"  Storyboard.TargetName="Border"  Storyboard.TargetProperty="(Button.Background).(SolidColorBrush.Color)"/>
-                                        <ColorAnimation To="{StaticResource SuccessBorderDownColor}"  Storyboard.TargetName="Border"  Storyboard.TargetProperty="(Button.BorderBrush).(SolidColorBrush.Color)"/>
                                     </Storyboard>
 
                                 </VisualState>
@@ -266,8 +275,8 @@
 
     <Style TargetType="{x:Type Button}" x:Key="WarningBtn" BasedOn="{StaticResource DefaultBtn}">
         <Setter Property="Background" Value="{DynamicResource WarningBackgroundColorBrush}"/>
-        <Setter Property="Foreground" Value="{DynamicResource WarningForegroundColorBrush}"/>
-        <Setter Property="BorderBrush" Value="{DynamicResource WarningBorderColorBrush}"/>
+        <Setter Property="Foreground" Value="{DynamicResource PrimaryForegroundColorBrush}"/>
+        <Setter Property="BorderBrush" Value="{DynamicResource PrimaryBorderColorBrush}"/>
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type Button}">
@@ -284,7 +293,6 @@
 
                                     <Storyboard>
                                         <ColorAnimation To="{StaticResource WarningBackgroundHoverColor}"  Storyboard.TargetName="Border"  Storyboard.TargetProperty="(Button.Background).(SolidColorBrush.Color)"/>
-                                        <ColorAnimation To="{StaticResource WarningBorderHoverColor}"  Storyboard.TargetName="Border"  Storyboard.TargetProperty="(Button.BorderBrush).(SolidColorBrush.Color)"/>
                                     </Storyboard>
 
                                 </VisualState>
@@ -293,7 +301,6 @@
 
                                     <Storyboard>
                                         <ColorAnimation To="{StaticResource WarningBackgroundDownColor}"  Storyboard.TargetName="Border"  Storyboard.TargetProperty="(Button.Background).(SolidColorBrush.Color)"/>
-                                        <ColorAnimation To="{StaticResource WarningBorderDownColor}"  Storyboard.TargetName="Border"  Storyboard.TargetProperty="(Button.BorderBrush).(SolidColorBrush.Color)"/>
                                     </Storyboard>
 
                                 </VisualState>
@@ -344,8 +351,8 @@
 
     <Style TargetType="{x:Type Button}" x:Key="DangerBtn" BasedOn="{StaticResource DefaultBtn}">
         <Setter Property="Background" Value="{DynamicResource DangerBackgroundColorBrush}"/>
-        <Setter Property="Foreground" Value="{DynamicResource DangerForegroundColorBrush}"/>
-        <Setter Property="BorderBrush" Value="{DynamicResource DangerBorderColorBrush}"/>
+        <Setter Property="Foreground" Value="{DynamicResource PrimaryForegroundColorBrush}"/>
+        <Setter Property="BorderBrush" Value="{DynamicResource PrimaryBorderColorBrush}"/>
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type Button}">
@@ -362,7 +369,6 @@
 
                                     <Storyboard>
                                         <ColorAnimation To="{StaticResource DangerBackgroundHoverColor}"  Storyboard.TargetName="Border"  Storyboard.TargetProperty="(Button.Background).(SolidColorBrush.Color)"/>
-                                        <ColorAnimation To="{StaticResource DangerBorderHoverColor}"  Storyboard.TargetName="Border"  Storyboard.TargetProperty="(Button.BorderBrush).(SolidColorBrush.Color)"/>
                                     </Storyboard>
 
                                 </VisualState>
@@ -371,7 +377,6 @@
 
                                     <Storyboard>
                                         <ColorAnimation To="{StaticResource DangerBackgroundDownColor}"  Storyboard.TargetName="Border"  Storyboard.TargetProperty="(Button.Background).(SolidColorBrush.Color)"/>
-                                        <ColorAnimation To="{StaticResource DangerBorderDownColor}"  Storyboard.TargetName="Border"  Storyboard.TargetProperty="(Button.BorderBrush).(SolidColorBrush.Color)"/>
                                     </Storyboard>
 
                                 </VisualState>
@@ -422,8 +427,8 @@
 
     <Style TargetType="{x:Type Button}" x:Key="InfoBtn" BasedOn="{StaticResource DefaultBtn}">
         <Setter Property="Background" Value="{DynamicResource InfoBackgroundColorBrush}"/>
-        <Setter Property="Foreground" Value="{DynamicResource InfoForegroundColorBrush}"/>
-        <Setter Property="BorderBrush" Value="{DynamicResource InfoBorderColorBrush}"/>
+        <Setter Property="Foreground" Value="{DynamicResource PrimaryForegroundColorBrush}"/>
+        <Setter Property="BorderBrush" Value="{DynamicResource PrimaryBorderColorBrush}"/>
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type Button}">
@@ -440,7 +445,6 @@
 
                                     <Storyboard>
                                         <ColorAnimation To="{StaticResource InfoBackgroundHoverColor}"  Storyboard.TargetName="Border"  Storyboard.TargetProperty="(Button.Background).(SolidColorBrush.Color)"/>
-                                        <ColorAnimation To="{StaticResource InfoBorderHoverColor}"  Storyboard.TargetName="Border"  Storyboard.TargetProperty="(Button.BorderBrush).(SolidColorBrush.Color)"/>
                                     </Storyboard>
 
                                 </VisualState>
@@ -449,7 +453,6 @@
 
                                     <Storyboard>
                                         <ColorAnimation To="{StaticResource InfoBackgroundDownColor}"  Storyboard.TargetName="Border"  Storyboard.TargetProperty="(Button.Background).(SolidColorBrush.Color)"/>
-                                        <ColorAnimation To="{StaticResource InfoBorderDownColor}"  Storyboard.TargetName="Border"  Storyboard.TargetProperty="(Button.BorderBrush).(SolidColorBrush.Color)"/>
                                     </Storyboard>
 
                                 </VisualState>
