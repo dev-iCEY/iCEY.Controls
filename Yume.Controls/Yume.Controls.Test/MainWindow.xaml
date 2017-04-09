@@ -18,11 +18,11 @@
                         </ControlTemplate>
                     </ItemsControl.Template>
                     <Button Content="Default" Margin="2.5" VerticalAlignment="Center" HorizontalAlignment="Center" />
-                    <Button Content="Primary" Style="{StaticResource PrimaryBtn}" Margin="2.5" VerticalAlignment="Center" HorizontalAlignment="Center" />
-                    <Button Content="Success" Style="{StaticResource SuccessBtn}" Margin="2.5" VerticalAlignment="Center" HorizontalAlignment="Center" />
-                    <Button Content="Warning" Style="{StaticResource WarningBtn}" Margin="2.5" VerticalAlignment="Center" HorizontalAlignment="Center" />
-                    <Button Content="Danger" Style="{StaticResource DangerBtn}" Margin="2.5" VerticalAlignment="Center" HorizontalAlignment="Center" />
-                    <Button Content="Info" Style="{StaticResource InfoBtn}" Margin="2.5" VerticalAlignment="Center" HorizontalAlignment="Center" />
+                    <Button Content="Primary" Style="{StaticResource PrimaryBtn}" Margin="2.5"  />
+                    <Button Content="Success" Style="{StaticResource SuccessBtn}" Margin="2.5" />
+                    <Button Content="Warning" Style="{StaticResource WarningBtn}" Margin="2.5" />
+                    <Button Content="Danger" Style="{StaticResource DangerBtn}" Margin="2.5" />
+                    <Button Content="Info" Style="{StaticResource InfoBtn}" Margin="2.5" />
                 </ItemsControl>
                 <CheckBox Margin="5" x:Name="SetBtnValue" Content="Enable all buttons" IsChecked="True" />
             </StackPanel>

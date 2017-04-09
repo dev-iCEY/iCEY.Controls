@@ -1,6 +1,6 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
-    
+
     <!--#region Include colors-->
     <ResourceDictionary.MergedDictionaries>
         <ResourceDictionary Source="../Colors.xaml"/>
@@ -11,6 +11,8 @@
     
     <Style x:Key="DefaultBtn" TargetType="{x:Type Button}">
         <Setter Property="OverridesDefaultStyle" Value="True"/>
+        <Setter Property="TextOptions.TextRenderingMode" Value="ClearType"/>
+        <Setter Property="TextOptions.TextFormattingMode" Value="Display"/>
         <Setter Property="Padding" Value="12 11 12 10" />
         <Setter Property="MinWidth" Value="100"/>
         <Setter Property="SnapsToDevicePixels" Value="True"/>
