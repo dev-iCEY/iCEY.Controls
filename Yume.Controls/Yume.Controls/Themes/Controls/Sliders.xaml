@@ -16,7 +16,7 @@
         <Setter Property="Height" Value="18" />
         <Setter Property="Width" Value="18" />
         <Setter Property="BorderThickness" Value="0" />
-        <Setter Property="BorderBrush" Value="{StaticResource DefaultThumbColorBrush}" />
+        <Setter Property="BorderBrush" Value="{StaticResource Static.Thumb.Brush}" />
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type Thumb}">
@@ -67,8 +67,8 @@
     </Style>
 
     <Style x:Key="DefaultSlider" TargetType="{x:Type Slider}">
-        <Setter Property="Background" Value="{DynamicResource DefaultSliderColorBrush}" />
-        <Setter Property="BorderBrush" Value="{DynamicResource DefaultThumbColorBrush}" />
+        <Setter Property="Background" Value="{DynamicResource Static.Slider.Brush}" />
+        <Setter Property="BorderBrush" Value="{DynamicResource Static.Thumb.Brush}" />
         <Setter Property="BorderThickness" Value="0" />
         <Setter Property="Template">
             <Setter.Value>
@@ -157,7 +157,7 @@
         d:IsControlPart="True"
         BasedOn="{StaticResource SliderThumb}"
         TargetType="{x:Type Thumb}">
-        <Setter Property="BorderBrush" Value="{StaticResource PrimaryBackgroundColorBrush}" />
+        <Setter Property="BorderBrush" Value="{StaticResource Static.Primary.Background.Brush}" />
     </Style>
 
     <Style
@@ -165,7 +165,7 @@
         d:IsControlPart="True"
         BasedOn="{StaticResource SliderThumb}"
         TargetType="{x:Type Thumb}">
-        <Setter Property="BorderBrush" Value="{StaticResource WarningBackgroundColorBrush}" />
+        <Setter Property="BorderBrush" Value="{StaticResource Static.Warning.Background.Brush}" />
     </Style>
 
     <Style
@@ -173,7 +173,7 @@
         d:IsControlPart="True"
         BasedOn="{StaticResource SliderThumb}"
         TargetType="{x:Type Thumb}">
-        <Setter Property="BorderBrush" Value="{StaticResource DangerBackgroundColorBrush}" />
+        <Setter Property="BorderBrush" Value="{StaticResource Static.Danger.Background.Brush}" />
     </Style>
 
     <Style
@@ -181,7 +181,7 @@
         d:IsControlPart="True"
         BasedOn="{StaticResource SliderThumb}"
         TargetType="{x:Type Thumb}">
-        <Setter Property="BorderBrush" Value="{StaticResource SuccessBackgroundColorBrush}" />
+        <Setter Property="BorderBrush" Value="{StaticResource Static.Success.Background.Brush}" />
     </Style>
 
     <Style
@@ -189,14 +189,14 @@
         d:IsControlPart="True"
         BasedOn="{StaticResource SliderThumb}"
         TargetType="{x:Type Thumb}">
-        <Setter Property="BorderBrush" Value="{StaticResource InfoBackgroundColorBrush}" />
+        <Setter Property="BorderBrush" Value="{StaticResource Static.Info.Background.Brush}" />
     </Style>
 
     <Style
         x:Key="PrimarySlider"
         BasedOn="{StaticResource DefaultSlider}"
         TargetType="{x:Type Slider}">
-        <Setter Property="BorderBrush" Value="{DynamicResource PrimaryBackgroundColorBrush}" />
+        <Setter Property="BorderBrush" Value="{DynamicResource Static.Primary.Background.Brush}" />
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type Slider}">
@@ -282,7 +282,7 @@
         x:Key="WarningSlider"
         BasedOn="{StaticResource DefaultSlider}"
         TargetType="{x:Type Slider}">
-        <Setter Property="BorderBrush" Value="{DynamicResource WarningBackgroundColorBrush}" />
+        <Setter Property="BorderBrush" Value="{DynamicResource Static.Warning.Background.Brush}" />
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type Slider}">
@@ -368,7 +368,7 @@
         x:Key="SuccessSlider"
         BasedOn="{StaticResource DefaultSlider}"
         TargetType="{x:Type Slider}">
-        <Setter Property="BorderBrush" Value="{DynamicResource SuccessBackgroundColorBrush}" />
+        <Setter Property="BorderBrush" Value="{DynamicResource Static.Success.Background.Brush}" />
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type Slider}">
@@ -454,7 +454,7 @@
         x:Key="DangerSlider"
         BasedOn="{StaticResource DefaultSlider}"
         TargetType="{x:Type Slider}">
-        <Setter Property="BorderBrush" Value="{DynamicResource DangerBackgroundColorBrush}" />
+        <Setter Property="BorderBrush" Value="{DynamicResource Static.Danger.Background.Brush}" />
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type Slider}">
@@ -540,7 +540,7 @@
         x:Key="InfoSlider"
         BasedOn="{StaticResource DefaultSlider}"
         TargetType="{x:Type Slider}">
-        <Setter Property="BorderBrush" Value="{DynamicResource InfoBackgroundColorBrush}" />
+        <Setter Property="BorderBrush" Value="{DynamicResource Static.Info.Background.Brush}" />
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type Slider}">

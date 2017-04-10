@@ -2,5 +2,6 @@
     <ResourceDictionary.MergedDictionaries>
         <ResourceDictionary Source="./Controls/Buttons.xaml" />
         <ResourceDictionary Source="./Controls/Sliders.xaml" />
+        <ResourceDictionary Source="./Controls/Expanders.xaml" />
     </ResourceDictionary.MergedDictionaries>
 </ResourceDictionary>

@@ -9,19 +9,13 @@
     Height="350"
     MinWidth="640"
     MinHeight="480"
-    RenderOptions.BitmapScalingMode="Fant"
-    RenderOptions.CachingHint="Cache"
     mc:Ignorable="d">
     <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
-        <StackPanel
-            Orientation="Vertical"
-            ScrollViewer.CanContentScroll="True"
-            ScrollViewer.VerticalScrollBarVisibility="Auto">
+        <StackPanel Orientation="Vertical">
+            <!--#region Buttons-->
             <Expander
-                Margin="2.5"
-                Padding="2.5"
-                BorderBrush="{DynamicResource DefaultBackgroundColorBrush}"
-                BorderThickness="2"
+                Margin="5"
+                x:Name="ExpanderButtons"
                 Header="Buttons">
                 <StackPanel Margin="2.5" Orientation="Vertical">
                     <ItemsControl Margin="2.5" IsEnabled="{Binding ElementName=SetBtnValue, Path=IsChecked}">
@@ -65,12 +59,11 @@
                         IsChecked="True" />
                 </StackPanel>
             </Expander>
+            <!--#endregion-->
+            <!--#region Sliders-->
             <Expander
                 x:Name="ExpanderSliders"
-                Margin="2.5"
-                Padding="2.5"
-                BorderBrush="{DynamicResource DefaultBackgroundColorBrush}"
-                BorderThickness="2"
+                Margin="5"
                 Header="Sliders">
                 <StackPanel Margin="2.5" Orientation="Vertical">
                     <StackPanel HorizontalAlignment="Left" IsEnabled="{Binding ElementName=SetSlidersValue, Path=IsChecked}">
@@ -206,6 +199,7 @@
                         IsChecked="True" />
                 </StackPanel>
             </Expander>
+            <!--#endregion-->
         </StackPanel>
     </ScrollViewer>
 </Window>

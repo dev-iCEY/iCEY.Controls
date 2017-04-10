@@ -1,97 +1,95 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
 
     <!--#region Default Colors-->
-    <Color x:Key="DefaultBackgroundHoverColor">#FFF2F2F2</Color>
-    <Color x:Key="DefaultBorderHoverColor">#FFA8B0C2</Color>
-    <Color x:Key="DefaultForegroundHoverColor">#FF696C74</Color>
+    <Color x:Key="MouseOver.Background.Color">#FFF2F2F2</Color>
+    <Color x:Key="MouseOver.Border.Color">#FFA8B0C2</Color>
+    <Color x:Key="MouseOver.ForegroundHoverColor">#FF696C74</Color>
 
-    <Color x:Key="DefaultBackgroundFocusColor">#FFEDEDED</Color>
-    <Color x:Key="DefaultBorderFocusColor">#FF818DA7</Color>
-    <Color x:Key="DefaultForegroundFocusColor">#FF696C74</Color>
+    <Color x:Key="Focus.Background.Color">#FFEDEDED</Color>
+    <Color x:Key="Focus.Border.Color">#FF818DA7</Color>
+    <Color x:Key="Focus.Foreground.Color">#FF696C74</Color>
 
-    <Color x:Key="DefaultBackgroundDownColor">#FFEDEDED</Color>
-    <Color x:Key="DefaultBorderDownColor">#FFA8B0C2</Color>
-    <Color x:Key="DefaultForegroundDownColor">#FF696C74</Color>
+    <Color x:Key="Pressed.Background.Color">#FFEDEDED</Color>
+    <Color x:Key="Pressed.Border.Color">#FFA8B0C2</Color>
+    <Color x:Key="Pressed.Foreground.Color">#FF696C74</Color>
 
-    <Color x:Key="DefaultBackgroundColor">#FFFFFFFF</Color>
-    <Color x:Key="DefaultForegroundColor">#FF696C74</Color>
-    <Color x:Key="DefaultBorderColor">#FFBDC3D1</Color>
+    <Color x:Key="Static.Background.Color">#FFFFFFFF</Color>
+    <Color x:Key="Static.Foreground.Color">#FF696C74</Color>
+    <Color x:Key="Static.Border.Color">#FFBDC3D1</Color>
 
-    <SolidColorBrush x:Key="DefaultBackgroundColorBrush" Color="{StaticResource DefaultBackgroundColor}" />
-    <SolidColorBrush x:Key="DefaultBorderColorBrush" Color="{StaticResource DefaultBorderColor}" />
-    <SolidColorBrush x:Key="DefaultForegroundColorBrush" Color="{StaticResource DefaultForegroundColor}" />
+    <SolidColorBrush x:Key="Static.Background.Brush" Color="{StaticResource Static.Background.Color}" />
+    <SolidColorBrush x:Key="Static.Border.Brush" Color="{StaticResource Static.Border.Color}" />
+    <SolidColorBrush x:Key="Static.Foreground.Brush" Color="{StaticResource Static.Foreground.Color}" />
 
-    <SolidColorBrush x:Key="DefaultBackgroundHoverColorBrush" Color="{StaticResource DefaultBackgroundHoverColor}" />
-    <SolidColorBrush x:Key="DefaultBorderHoverColorBrush" Color="{StaticResource DefaultBorderHoverColor}" />
-    <SolidColorBrush x:Key="DefaultForegroundHoverColorBrush" Color="{StaticResource DefaultForegroundHoverColor}" />
+    <SolidColorBrush x:Key="MouseOver.Background.Brush" Color="{StaticResource MouseOver.Background.Color}" />
+    <SolidColorBrush x:Key="MouseOver.Border.Brush" Color="{StaticResource MouseOver.Border.Color}" />
+    <SolidColorBrush x:Key="MouseOver.Foreground.Brush" Color="{StaticResource MouseOver.ForegroundHoverColor}" />
 
-    <SolidColorBrush x:Key="DefaultBackgroundDownColorBrush" Color="{StaticResource DefaultBackgroundDownColor}" />
-    <SolidColorBrush x:Key="DefaultBorderDownColorBrush" Color="{StaticResource DefaultBorderDownColor}" />
-    <SolidColorBrush x:Key="DefaultForegroundDownColorBrush" Color="{StaticResource DefaultForegroundDownColor}" />
+    <SolidColorBrush x:Key="Pressed.Background.Brush" Color="{StaticResource Pressed.Background.Color}" />
+    <SolidColorBrush x:Key="Pressed.Border.Brush" Color="{StaticResource Pressed.Border.Color}" />
+    <SolidColorBrush x:Key="Pressed.Foreground.Brush" Color="{StaticResource Pressed.Foreground.Color}" />
     <!--#endregion-->
 
     <!--#region Primary Colors-->
 
-    <Color x:Key="PrimaryBackgroundColor">#FF2574AB</Color>
-    <Color x:Key="PrimaryBorderColor">Transparent</Color>
-    <Color x:Key="PrimaryForegroundColor">#FFFFFFFF</Color>
-    <Color x:Key="PrimaryBackgroundHoverColor">#FF206696</Color>
-    <Color x:Key="PrimaryBackgroundDownColor">#FF1F608E</Color>
+    <Color x:Key="Static.Primary.Background.Color">#FF2574AB</Color>
+    <Color x:Key="Static.Primary.Border.Color">Transparent</Color>
+    <Color x:Key="Static.Primary.Foreground.Color">#FFFFFFFF</Color>
+    <Color x:Key="MouseOver.Primary.Background.Color">#FF206696</Color>
+    <Color x:Key="Pressed.Primary.Background.Color">#FF1F608E</Color>
 
-    <SolidColorBrush x:Key="PrimaryBackgroundColorBrush" Color="{StaticResource PrimaryBackgroundColor}" />
-    <SolidColorBrush x:Key="PrimaryBorderColorBrush" Color="{StaticResource PrimaryBorderColor}" />
-    <SolidColorBrush x:Key="PrimaryForegroundColorBrush" Color="{StaticResource PrimaryForegroundColor}" />
+    <SolidColorBrush x:Key="Static.Primary.Background.Brush" Color="{StaticResource Static.Primary.Background.Color}" />
+    <SolidColorBrush x:Key="Static.Primary.Border.Brush" Color="{StaticResource Static.Primary.Border.Color}" />
+    <SolidColorBrush x:Key="Static.Primary.Foreground.Brush" Color="{StaticResource Static.Primary.Foreground.Color}" />
 
     <!--#endregion-->
 
     <!--#region Success Colors-->
 
-    <Color x:Key="SuccessBackgroundColor">#FF259DAB</Color>
-    <Color x:Key="SuccessBackgroundHoverColor">#FF208A96</Color>
-    <Color x:Key="SuccessBackgroundDownColor">#FF1F828E</Color>
+    <Color x:Key="Static.Success.Background.Color">#FF259DAB</Color>
+    <Color x:Key="MouseOver.Success.Background.Color">#FF208A96</Color>
+    <Color x:Key="Pressed.Success.Background.Color">#FF1F828E</Color>
 
-    <SolidColorBrush x:Key="SuccessBackgroundColorBrush" Color="{StaticResource SuccessBackgroundColor}" />
-    <SolidColorBrush x:Key="SuccessBorderColorBrush" Color="{StaticResource PrimaryBorderColor}" />
-    <SolidColorBrush x:Key="SuccessForegroundColorBrush" Color="{StaticResource PrimaryForegroundColor}" />
+    <SolidColorBrush x:Key="Static.Success.Background.Brush" Color="{StaticResource Static.Success.Background.Color}" />
+    <SolidColorBrush x:Key="Static.Success.Border.Brush" Color="{StaticResource Static.Primary.Border.Color}" />
+    <SolidColorBrush x:Key="Static.Success.Foreground.Brush" Color="{StaticResource Static.Primary.Foreground.Color}" />
 
     <!--#endregion-->
 
     <!--#region Warning Colors-->
 
-    <Color x:Key="WarningBackgroundColor">#FFE6AD5C</Color>
-    <Color x:Key="WarningBackgroundHoverColor">#FFE3A246</Color>
-    <Color x:Key="WarningBackgroundDownColor">#FFE19D3D</Color>
+    <Color x:Key="Static.Warning.Background.Color">#FFE6AD5C</Color>
+    <Color x:Key="MouseOver.Warning.Background.Color">#FFE3A246</Color>
+    <Color x:Key="Pressed.Warning.Background.Color">#FFE19D3D</Color>
 
 
-    <SolidColorBrush x:Key="WarningBackgroundColorBrush" Color="{StaticResource WarningBackgroundColor}" />
-    <SolidColorBrush x:Key="WarningBorderColorBrush" Color="{StaticResource PrimaryBorderColor}" />
-    <SolidColorBrush x:Key="WarningForegroundColorBrush" Color="{StaticResource PrimaryForegroundColor}" />
+    <SolidColorBrush x:Key="Static.Warning.Background.Brush" Color="{StaticResource Static.Warning.Background.Color}" />
+    <SolidColorBrush x:Key="Static.Warning.Border.Brush" Color="{StaticResource Static.Primary.Border.Color}" />
+    <SolidColorBrush x:Key="Static.Warning.Foreground.Brush" Color="{StaticResource Static.Primary.Foreground.Color}" />
 
     <!--#endregion-->
 
     <!--#region Danger Colors-->
 
-    <Color x:Key="DangerBackgroundColor">#FFD9534F</Color>
-    <Color x:Key="DangerBackgroundHoverColor">#FFD43F3A</Color>
-    <Color x:Key="DangerBackgroundDownColor">#FFD33632</Color>
+    <Color x:Key="Static.Danger.Background.Color">#FFD9534F</Color>
+    <Color x:Key="MouseOver.Danger.Background.Color">#FFD43F3A</Color>
+    <Color x:Key="Pressed.Danger.Background.Color">#FFD33632</Color>
 
-    <SolidColorBrush x:Key="DangerBackgroundColorBrush" Color="{StaticResource DangerBackgroundColor}" />
-    <SolidColorBrush x:Key="DangerBorderColorBrush" Color="{StaticResource PrimaryBorderColor}" />
-    <SolidColorBrush x:Key="DangerForegroundColorBrush" Color="{StaticResource PrimaryForegroundColor}" />
+    <SolidColorBrush x:Key="Static.Danger.Background.Brush" Color="{StaticResource Static.Danger.Background.Color}" />
+    <SolidColorBrush x:Key="Static.Danger.Border.Brush" Color="{StaticResource Static.Primary.Border.Color}" />
+    <SolidColorBrush x:Key="Static.Danger.Foreground.Brush" Color="{StaticResource Static.Primary.Foreground.Color}" />
 
     <!--#endregion-->
 
     <!--#region Info Colors-->
 
-    <Color x:Key="InfoBackgroundColor">#FF5BC0DE</Color>
+    <Color x:Key="Static.Info.Background.Color">#FF5BC0DE</Color>
+    <Color x:Key="MouseOver.Info.Background.Color">#FF46B8DA</Color>
+    <Color x:Key="Pressed.Info.Background.Color">#FF3DB5D8</Color>
 
-    <Color x:Key="InfoBackgroundHoverColor">#FF46B8DA</Color>
-
-    <Color x:Key="InfoBackgroundDownColor">#FF3DB5D8</Color>
-
-    <SolidColorBrush x:Key="InfoBackgroundColorBrush" Color="{StaticResource InfoBackgroundColor}" />
-    <SolidColorBrush x:Key="InfoBorderColorBrush" Color="{StaticResource PrimaryBorderColor}" />
-    <SolidColorBrush x:Key="InfoForegroundColorBrush" Color="{StaticResource PrimaryForegroundColor}" />
+    <SolidColorBrush x:Key="Static.Info.Background.Brush" Color="{StaticResource Static.Info.Background.Color}" />
+    <SolidColorBrush x:Key="Static.Info.Border.Brush" Color="{StaticResource Static.Primary.Border.Color}" />
+    <SolidColorBrush x:Key="Static.Info.Foreground.Brush" Color="{StaticResource Static.Primary.Foreground.Color}" />
 
     <!--#endregion-->
 
@@ -102,13 +100,22 @@
     <!--#endregion-->
 
     <!--#region Slider-->
-    <SolidColorBrush x:Key="GlyphBrush" Color="#444" />
+    <SolidColorBrush x:Key="Glyph.Brush" Color="#444" />
 
-    <Color x:Key="DefaultThumbColor">#FF909BB1</Color>
-    <Color x:Key="DefaultSliderColor">#FFd8DCE3</Color>
+    <Color x:Key="Static.Thumb.Color">#FF909BB1</Color>
+    <Color x:Key="Static.Slider.Color">#FFd8DCE3</Color>
 
-    <SolidColorBrush x:Key="DefaultSliderColorBrush" Color="{StaticResource DefaultSliderColor}" />
-    <SolidColorBrush x:Key="DefaultThumbColorBrush" Color="{StaticResource DefaultThumbColor}" />
+    <SolidColorBrush x:Key="Static.Slider.Brush" Color="{StaticResource Static.Slider.Color}" />
+    <SolidColorBrush x:Key="Static.Thumb.Brush" Color="{StaticResource Static.Thumb.Color}" />
+
+    <!--#endregion-->
+
+    <!--#region Expander Colors-->
+
+    <Color x:Key="DefaultExpanderHeaderColor">#FF9FA8BC</Color>
+
+    <SolidColorBrush x:Key="DefaultExpanderHeaderBrush" Color="{StaticResource DefaultExpanderHeaderColor}" />
+    <SolidColorBrush x:Key="DefaultExpanderContentBrush" Color="{StaticResource Static.Background.Color}" />
 
     <!--#endregion-->
 

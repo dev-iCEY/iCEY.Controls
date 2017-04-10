@@ -36,9 +36,9 @@
         <Setter Property="FontSize" Value="12" />
         <Setter Property="FontFamily" Value="Helvetica Arial sans-serif" />
         <Setter Property="FontWeight" Value="Normal" />
-        <Setter Property="Background" Value="{DynamicResource DefaultBackgroundColorBrush}" />
-        <Setter Property="Foreground" Value="{DynamicResource DefaultForegroundColorBrush}" />
-        <Setter Property="BorderBrush" Value="{DynamicResource DefaultBorderColorBrush}" />
+        <Setter Property="Background" Value="{DynamicResource Static.Background.Brush}" />
+        <Setter Property="Foreground" Value="{DynamicResource Static.Foreground.Brush}" />
+        <Setter Property="BorderBrush" Value="{DynamicResource Static.Border.Brush}" />
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type Button}">
@@ -61,11 +61,11 @@
                                         <ColorAnimation
                                             Storyboard.TargetName="Border"
                                             Storyboard.TargetProperty="(Button.Background).(SolidColorBrush.Color)"
-                                            To="{StaticResource DefaultBackgroundHoverColor}" />
+                                            To="{StaticResource MouseOver.Background.Color}" />
                                         <ColorAnimation
                                             Storyboard.TargetName="Border"
                                             Storyboard.TargetProperty="(Button.BorderBrush).(SolidColorBrush.Color)"
-                                            To="{StaticResource DefaultBorderHoverColor}" />
+                                            To="{StaticResource MouseOver.Border.Color}" />
                                     </Storyboard>
                                 </VisualState>
                                 <VisualState Name="Pressed">
@@ -73,11 +73,11 @@
                                         <ColorAnimation
                                             Storyboard.TargetName="Border"
                                             Storyboard.TargetProperty="(Button.Background).(SolidColorBrush.Color)"
-                                            To="{StaticResource DefaultBackgroundDownColor}" />
+                                            To="{StaticResource Pressed.Background.Color}" />
                                         <ColorAnimation
                                             Storyboard.TargetName="Border"
                                             Storyboard.TargetProperty="(Button.BorderBrush).(SolidColorBrush.Color)"
-                                            To="{StaticResource DefaultBorderDownColor}" />
+                                            To="{StaticResource Pressed.Border.Color}" />
                                     </Storyboard>
                                 </VisualState>
                                 <VisualStateGroup.Transitions>
@@ -119,9 +119,9 @@
         x:Key="PrimaryBtn"
         BasedOn="{StaticResource DefaultBtn}"
         TargetType="{x:Type Button}">
-        <Setter Property="Background" Value="{DynamicResource PrimaryBackgroundColorBrush}" />
-        <Setter Property="Foreground" Value="{DynamicResource PrimaryForegroundColorBrush}" />
-        <Setter Property="BorderBrush" Value="{DynamicResource PrimaryBorderColorBrush}" />
+        <Setter Property="Background" Value="{DynamicResource Static.Primary.Background.Brush}" />
+        <Setter Property="Foreground" Value="{DynamicResource Static.Primary.Foreground.Brush}" />
+        <Setter Property="BorderBrush" Value="{DynamicResource Static.Primary.Border.Brush}" />
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type Button}">
@@ -144,7 +144,7 @@
                                         <ColorAnimation
                                             Storyboard.TargetName="Border"
                                             Storyboard.TargetProperty="(Button.Background).(SolidColorBrush.Color)"
-                                            To="{StaticResource PrimaryBackgroundHoverColor}" />
+                                            To="{StaticResource MouseOver.Primary.Background.Color}" />
                                     </Storyboard>
                                 </VisualState>
                                 <VisualState Name="Pressed">
@@ -152,7 +152,7 @@
                                         <ColorAnimation
                                             Storyboard.TargetName="Border"
                                             Storyboard.TargetProperty="(Button.Background).(SolidColorBrush.Color)"
-                                            To="{StaticResource PrimaryBackgroundDownColor}" />
+                                            To="{StaticResource Pressed.Primary.Background.Color}" />
                                     </Storyboard>
                                 </VisualState>
                                 <VisualStateGroup.Transitions>
@@ -186,9 +186,9 @@
         x:Key="SuccessBtn"
         BasedOn="{StaticResource DefaultBtn}"
         TargetType="{x:Type Button}">
-        <Setter Property="Background" Value="{DynamicResource SuccessBackgroundColorBrush}" />
-        <Setter Property="Foreground" Value="{DynamicResource PrimaryForegroundColorBrush}" />
-        <Setter Property="BorderBrush" Value="{DynamicResource PrimaryBorderColorBrush}" />
+        <Setter Property="Background" Value="{DynamicResource Static.Success.Background.Brush}" />
+        <Setter Property="Foreground" Value="{DynamicResource Static.Primary.Foreground.Brush}" />
+        <Setter Property="BorderBrush" Value="{DynamicResource Static.Primary.Border.Brush}" />
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type Button}">
@@ -211,7 +211,7 @@
                                         <ColorAnimation
                                             Storyboard.TargetName="Border"
                                             Storyboard.TargetProperty="(Button.Background).(SolidColorBrush.Color)"
-                                            To="{StaticResource SuccessBackgroundHoverColor}" />
+                                            To="{StaticResource MouseOver.Success.Background.Color}" />
                                     </Storyboard>
                                 </VisualState>
                                 <VisualState Name="Pressed">
@@ -219,7 +219,7 @@
                                         <ColorAnimation
                                             Storyboard.TargetName="Border"
                                             Storyboard.TargetProperty="(Button.Background).(SolidColorBrush.Color)"
-                                            To="{StaticResource SuccessBackgroundDownColor}" />
+                                            To="{StaticResource Pressed.Success.Background.Color}" />
                                     </Storyboard>
                                 </VisualState>
                                 <VisualStateGroup.Transitions>
@@ -253,9 +253,9 @@
         x:Key="WarningBtn"
         BasedOn="{StaticResource DefaultBtn}"
         TargetType="{x:Type Button}">
-        <Setter Property="Background" Value="{DynamicResource WarningBackgroundColorBrush}" />
-        <Setter Property="Foreground" Value="{DynamicResource PrimaryForegroundColorBrush}" />
-        <Setter Property="BorderBrush" Value="{DynamicResource PrimaryBorderColorBrush}" />
+        <Setter Property="Background" Value="{DynamicResource Static.Warning.Background.Brush}" />
+        <Setter Property="Foreground" Value="{DynamicResource Static.Primary.Foreground.Brush}" />
+        <Setter Property="BorderBrush" Value="{DynamicResource Static.Primary.Border.Brush}" />
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type Button}">
@@ -278,7 +278,7 @@
                                         <ColorAnimation
                                             Storyboard.TargetName="Border"
                                             Storyboard.TargetProperty="(Button.Background).(SolidColorBrush.Color)"
-                                            To="{StaticResource WarningBackgroundHoverColor}" />
+                                            To="{StaticResource MouseOver.Warning.Background.Color}" />
                                     </Storyboard>
                                 </VisualState>
                                 <VisualState Name="Pressed">
@@ -287,7 +287,7 @@
                                         <ColorAnimation
                                             Storyboard.TargetName="Border"
                                             Storyboard.TargetProperty="(Button.Background).(SolidColorBrush.Color)"
-                                            To="{StaticResource WarningBackgroundDownColor}" />
+                                            To="{StaticResource Pressed.Warning.Background.Color}" />
                                     </Storyboard>
                                 </VisualState>
                                 <VisualStateGroup.Transitions>
@@ -321,9 +321,9 @@
         x:Key="DangerBtn"
         BasedOn="{StaticResource DefaultBtn}"
         TargetType="{x:Type Button}">
-        <Setter Property="Background" Value="{DynamicResource DangerBackgroundColorBrush}" />
-        <Setter Property="Foreground" Value="{DynamicResource PrimaryForegroundColorBrush}" />
-        <Setter Property="BorderBrush" Value="{DynamicResource PrimaryBorderColorBrush}" />
+        <Setter Property="Background" Value="{DynamicResource Static.Danger.Background.Brush}" />
+        <Setter Property="Foreground" Value="{DynamicResource Static.Primary.Foreground.Brush}" />
+        <Setter Property="BorderBrush" Value="{DynamicResource Static.Primary.Border.Brush}" />
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type Button}">
@@ -346,7 +346,7 @@
                                         <ColorAnimation
                                             Storyboard.TargetName="Border"
                                             Storyboard.TargetProperty="(Button.Background).(SolidColorBrush.Color)"
-                                            To="{StaticResource DangerBackgroundHoverColor}" />
+                                            To="{StaticResource MouseOver.Danger.Background.Color}" />
                                     </Storyboard>
                                 </VisualState>
                                 <VisualState Name="Pressed">
@@ -354,7 +354,7 @@
                                         <ColorAnimation
                                             Storyboard.TargetName="Border"
                                             Storyboard.TargetProperty="(Button.Background).(SolidColorBrush.Color)"
-                                            To="{StaticResource DangerBackgroundDownColor}" />
+                                            To="{StaticResource Pressed.Danger.Background.Color}" />
                                     </Storyboard>
                                 </VisualState>
                                 <VisualStateGroup.Transitions>
@@ -388,9 +388,9 @@
         x:Key="InfoBtn"
         BasedOn="{StaticResource DefaultBtn}"
         TargetType="{x:Type Button}">
-        <Setter Property="Background" Value="{DynamicResource InfoBackgroundColorBrush}" />
-        <Setter Property="Foreground" Value="{DynamicResource PrimaryForegroundColorBrush}" />
-        <Setter Property="BorderBrush" Value="{DynamicResource PrimaryBorderColorBrush}" />
+        <Setter Property="Background" Value="{DynamicResource Static.Info.Background.Brush}" />
+        <Setter Property="Foreground" Value="{DynamicResource Static.Primary.Foreground.Brush}" />
+        <Setter Property="BorderBrush" Value="{DynamicResource Static.Primary.Border.Brush}" />
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type Button}">
@@ -413,7 +413,7 @@
                                         <ColorAnimation
                                             Storyboard.TargetName="Border"
                                             Storyboard.TargetProperty="(Button.Background).(SolidColorBrush.Color)"
-                                            To="{StaticResource InfoBackgroundHoverColor}" />
+                                            To="{StaticResource MouseOver.Info.Background.Color}" />
                                     </Storyboard>
                                 </VisualState>
                                 <VisualState Name="Pressed">
@@ -421,7 +421,7 @@
                                         <ColorAnimation
                                             Storyboard.TargetName="Border"
                                             Storyboard.TargetProperty="(Button.Background).(SolidColorBrush.Color)"
-                                            To="{StaticResource InfoBackgroundDownColor}" />
+                                            To="{StaticResource Pressed.Info.Background.Color}" />
                                     </Storyboard>
                                 </VisualState>
                                 <VisualStateGroup.Transitions>
