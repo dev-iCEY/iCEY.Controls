@@ -11,6 +11,8 @@ Includes the following styles:
 * Menu
 * ListBox
 * MenuPopup
+* ProgressBar
+* ToogleButton
 
 At the moment the following were realized:
 * Button

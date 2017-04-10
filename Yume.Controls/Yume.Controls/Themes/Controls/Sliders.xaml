@@ -83,7 +83,7 @@
                         <TickBar
                             x:Name="TopTick"
                             Height="6"
-                            Fill="{DynamicResource GlyphBrush}"
+                            Fill="{DynamicResource Glyph.Brush}"
                             Placement="Top"
                             SnapsToDevicePixels="True"
                             Visibility="Collapsed" />
@@ -210,7 +210,7 @@
                         <TickBar
                             x:Name="TopTick"
                             Height="6"
-                            Fill="{DynamicResource GlyphBrush}"
+                            Fill="{DynamicResource Glyph.Brush}"
                             Placement="Top"
                             SnapsToDevicePixels="True"
                             Visibility="Collapsed" />
@@ -296,7 +296,7 @@
                         <TickBar
                             x:Name="TopTick"
                             Height="6"
-                            Fill="{DynamicResource GlyphBrush}"
+                            Fill="{DynamicResource Glyph.Brush}"
                             Placement="Top"
                             SnapsToDevicePixels="True"
                             Visibility="Collapsed" />
@@ -382,7 +382,7 @@
                         <TickBar
                             x:Name="TopTick"
                             Height="6"
-                            Fill="{DynamicResource GlyphBrush}"
+                            Fill="{DynamicResource Glyph.Brush}"
                             Placement="Top"
                             SnapsToDevicePixels="True"
                             Visibility="Collapsed" />
@@ -468,7 +468,7 @@
                         <TickBar
                             x:Name="TopTick"
                             Height="6"
-                            Fill="{DynamicResource GlyphBrush}"
+                            Fill="{DynamicResource Glyph.Brush}"
                             Placement="Top"
                             SnapsToDevicePixels="True"
                             Visibility="Collapsed" />
@@ -554,7 +554,7 @@
                         <TickBar
                             x:Name="TopTick"
                             Height="6"
-                            Fill="{DynamicResource GlyphBrush}"
+                            Fill="{DynamicResource Glyph.Brush}"
                             Placement="Top"
                             SnapsToDevicePixels="True"
                             Visibility="Collapsed" />
