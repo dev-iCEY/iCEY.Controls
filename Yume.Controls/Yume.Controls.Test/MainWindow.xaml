@@ -1,17 +1,29 @@
-﻿<Window x:Class="Yume.Controls.Test.MainWindow"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525" RenderOptions.BitmapScalingMode="Fant"
-        RenderOptions.CachingHint="Cache">
-    <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled">
-        <StackPanel Orientation="Vertical" ScrollViewer.CanContentScroll="True"
-                    ScrollViewer.VerticalScrollBarVisibility="Auto">
-            <Expander Header="Buttons" Padding="2.5" Margin="2.5" BorderThickness="2"
-                      BorderBrush="{DynamicResource DefaultBackgroundColorBrush}">
-                <StackPanel Orientation="Vertical" Margin="2.5">
+﻿<Window
+    x:Class="Yume.Controls.Test.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="MainWindow"
+    Width="525"
+    Height="350"
+    MinWidth="640"
+    MinHeight="480"
+    RenderOptions.BitmapScalingMode="Fant"
+    RenderOptions.CachingHint="Cache"
+    mc:Ignorable="d">
+    <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
+        <StackPanel
+            Orientation="Vertical"
+            ScrollViewer.CanContentScroll="True"
+            ScrollViewer.VerticalScrollBarVisibility="Auto">
+            <Expander
+                Margin="2.5"
+                Padding="2.5"
+                BorderBrush="{DynamicResource DefaultBackgroundColorBrush}"
+                BorderThickness="2"
+                Header="Buttons">
+                <StackPanel Margin="2.5" Orientation="Vertical">
                     <ItemsControl Margin="2.5" IsEnabled="{Binding ElementName=SetBtnValue, Path=IsChecked}">
                         <ItemsControl.Template>
                             <ControlTemplate>
@@ -20,49 +32,178 @@
                                 </Border>
                             </ControlTemplate>
                         </ItemsControl.Template>
-                        <Button Content="Default" Margin="2.5" VerticalAlignment="Center" HorizontalAlignment="Center" />
-                        <Button Content="Primary" Style="{StaticResource PrimaryBtn}" Margin="2.5" />
-                        <Button Content="Success" Style="{StaticResource SuccessBtn}" Margin="2.5" />
-                        <Button Content="Warning" Style="{StaticResource WarningBtn}" Margin="2.5" />
-                        <Button Content="Danger" Style="{StaticResource DangerBtn}" Margin="2.5" />
-                        <Button Content="Info" Style="{StaticResource InfoBtn}" Margin="2.5" />
-
+                        <Button
+                            Margin="2.5"
+                            HorizontalAlignment="Center"
+                            VerticalAlignment="Center"
+                            Content="Default" />
+                        <Button
+                            Margin="2.5"
+                            Content="Primary"
+                            Style="{StaticResource PrimaryBtn}" />
+                        <Button
+                            Margin="2.5"
+                            Content="Success"
+                            Style="{StaticResource SuccessBtn}" />
+                        <Button
+                            Margin="2.5"
+                            Content="Warning"
+                            Style="{StaticResource WarningBtn}" />
+                        <Button
+                            Margin="2.5"
+                            Content="Danger"
+                            Style="{StaticResource DangerBtn}" />
+                        <Button
+                            Margin="2.5"
+                            Content="Info"
+                            Style="{StaticResource InfoBtn}" />
                     </ItemsControl>
-                    <CheckBox Margin="5" x:Name="SetBtnValue" Content="Enable all buttons" IsChecked="True" />
+                    <CheckBox
+                        x:Name="SetBtnValue"
+                        Margin="5"
+                        Content="Enable all buttons"
+                        IsChecked="True" />
                 </StackPanel>
             </Expander>
-            <Expander Header="Sliders" Padding="2.5" Margin="2.5" BorderThickness="2"
-                      BorderBrush="{DynamicResource DefaultBackgroundColorBrush}">
-                <StackPanel Orientation="Vertical" Margin="2.5">
-                    <StackPanel HorizontalAlignment="Left"
-                                IsEnabled="{Binding ElementName=SetSlidersValue, Path=IsChecked}">
+            <Expander
+                x:Name="ExpanderSliders"
+                Margin="2.5"
+                Padding="2.5"
+                BorderBrush="{DynamicResource DefaultBackgroundColorBrush}"
+                BorderThickness="2"
+                Header="Sliders">
+                <StackPanel Margin="2.5" Orientation="Vertical">
+                    <StackPanel HorizontalAlignment="Left" IsEnabled="{Binding ElementName=SetSlidersValue, Path=IsChecked}">
                         <GroupBox Header="Default slider">
                             <StackPanel>
-                                <Slider Margin="2.5" Width="300" />
-                                <Slider Style="{DynamicResource PrimarySlider}" Margin="2.5" Width="300" />
+                                <Slider Width="300" Margin="0,2.5" />
+                                <Slider
+                                    Width="300"
+                                    Margin="0,2.5"
+                                    Style="{StaticResource PrimarySlider}" />
+                                <Slider
+                                    Width="300"
+                                    Margin="0,2.5"
+                                    Style="{StaticResource SuccessSlider}" />
+                                <Slider
+                                    Width="300"
+                                    Margin="0,2.5"
+                                    Style="{StaticResource WarningSlider}" />
+                                <Slider
+                                    Width="300"
+                                    Margin="0,2.5"
+                                    Style="{StaticResource DangerSlider}" />
+                                <Slider
+                                    Width="300"
+                                    Margin="0,2.5"
+                                    Style="{StaticResource InfoSlider}" />
                             </StackPanel>
                         </GroupBox>
                         <GroupBox Header="TickPlacement TopLeft">
                             <StackPanel>
-                                <Slider Width="300" Margin="2.5" TickPlacement="TopLeft" />
-                                <Slider Style="{StaticResource PrimarySlider}" Width="300" Margin="2.5"
-                                        TickPlacement="TopLeft" />
+                                <Slider
+                                    Width="300"
+                                    Margin="2.5"
+                                    TickPlacement="TopLeft" />
+                                <Slider
+                                    Width="300"
+                                    Margin="2.5"
+                                    Style="{StaticResource PrimarySlider}"
+                                    TickPlacement="TopLeft" />
+                                <Slider
+                                    Width="300"
+                                    Margin="2.5"
+                                    Style="{StaticResource SuccessSlider}"
+                                    TickPlacement="TopLeft" />
+                                <Slider
+                                    Width="300"
+                                    Margin="2.5"
+                                    Style="{StaticResource WarningSlider}"
+                                    TickPlacement="TopLeft" />
+                                <Slider
+                                    Width="300"
+                                    Margin="2.5"
+                                    Style="{StaticResource DangerSlider}"
+                                    TickPlacement="TopLeft" />
+                                <Slider
+                                    Width="300"
+                                    Margin="2.5"
+                                    Style="{StaticResource InfoSlider}"
+                                    TickPlacement="TopLeft" />
                             </StackPanel>
                         </GroupBox>
                         <GroupBox Header="TickPlacement BottomRight">
                             <StackPanel>
-                                <Slider Width="300" Margin="2.5" TickPlacement="BottomRight" />
+                                <Slider
+                                    Width="300"
+                                    Margin="2.5"
+                                    TickPlacement="BottomRight" />
+                                <Slider
+                                    Width="300"
+                                    Margin="2.5"
+                                    Style="{StaticResource PrimarySlider}"
+                                    TickPlacement="BottomRight" />
+                                <Slider
+                                    Width="300"
+                                    Margin="2.5"
+                                    Style="{StaticResource SuccessSlider}"
+                                    TickPlacement="BottomRight" />
+                                <Slider
+                                    Width="300"
+                                    Margin="2.5"
+                                    Style="{StaticResource WarningSlider}"
+                                    TickPlacement="BottomRight" />
+                                <Slider
+                                    Width="300"
+                                    Margin="2.5"
+                                    Style="{StaticResource DangerSlider}"
+                                    TickPlacement="BottomRight" />
+                                <Slider
+                                    Width="300"
+                                    Margin="2.5"
+                                    Style="{StaticResource InfoSlider}"
+                                    TickPlacement="BottomRight" />
                             </StackPanel>
                         </GroupBox>
                         <GroupBox Header=" TickPlacement Both">
                             <StackPanel>
-                                <Slider Width="300" Margin="2.5" TickPlacement="Both" />
-                                <Slider Style="{StaticResource PrimarySlider}" Width="300" Margin="2.5"
-                                        TickPlacement="Both" />
+                                <Slider
+                                    Width="300"
+                                    Margin="2.5"
+                                    TickPlacement="Both" />
+                                <Slider
+                                    Width="300"
+                                    Margin="2.5"
+                                    Style="{StaticResource PrimarySlider}"
+                                    TickPlacement="Both" />
+                                <Slider
+                                    Width="300"
+                                    Margin="2.5"
+                                    Style="{StaticResource SuccessSlider}"
+                                    TickPlacement="Both" />
+                                <Slider
+                                    Width="300"
+                                    Margin="2.5"
+                                    Style="{StaticResource WarningSlider}"
+                                    TickPlacement="Both" />
+                                <Slider
+                                    Width="300"
+                                    Margin="2.5"
+                                    Style="{StaticResource DangerSlider}"
+                                    TickPlacement="Both" />
+                                <Slider
+                                    Width="300"
+                                    Margin="2.5"
+                                    Style="{StaticResource InfoSlider}"
+                                    TickPlacement="Both" />
                             </StackPanel>
                         </GroupBox>
                     </StackPanel>
-                    <CheckBox Margin="5" x:Name="SetSlidersValue" Content="Enable all sliders" IsChecked="True" />
+                    <CheckBox
+                        x:Name="SetSlidersValue"
+                        Margin="5"
+                        Content="Enable all sliders"
+                        IsChecked="True" />
                 </StackPanel>
             </Expander>
         </StackPanel>

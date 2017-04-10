@@ -1,5 +1,4 @@
-﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
     <!--#region All Styles Buttons-->
     <!--#region Include colors-->
     <ResourceDictionary.MergedDictionaries>
@@ -12,7 +11,11 @@
             <Setter.Value>
                 <ControlTemplate>
                     <Border>
-                        <Rectangle Margin="2" Stroke="#60000000" StrokeThickness="1" StrokeDashArray="1 2" />
+                        <Rectangle
+                            Margin="2"
+                            Stroke="#60000000"
+                            StrokeDashArray="1 2"
+                            StrokeThickness="1" />
                     </Border>
                 </ControlTemplate>
             </Setter.Value>
@@ -23,7 +26,7 @@
     <Style x:Key="DefaultBtn" TargetType="{x:Type Button}">
         <Setter Property="OverridesDefaultStyle" Value="True" />
         <Setter Property="FocusVisualStyle" Value="{DynamicResource BtnFocusVisual}" />
-        <Setter Property="Padding" Value="12 11 12 10" />
+        <Setter Property="Padding" Value="12,11,12,10" />
         <Setter Property="MinWidth" Value="100" />
         <Setter Property="SnapsToDevicePixels" Value="True" />
         <Setter Property="VerticalContentAlignment" Value="Center" />
@@ -39,48 +42,57 @@
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type Button}">
-                    <Border Padding="{TemplateBinding Padding}" x:Name="Border" BorderThickness=".9"
-                            BorderBrush="{TemplateBinding BorderBrush}" Background="{TemplateBinding Background}"
-                            CornerRadius="2">
-                        <ContentPresenter x:Name="PART_Button"
-                                          VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
-                                          HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" />
+                    <Border
+                        x:Name="Border"
+                        Padding="{TemplateBinding Padding}"
+                        Background="{TemplateBinding Background}"
+                        BorderBrush="{TemplateBinding BorderBrush}"
+                        BorderThickness=".9"
+                        CornerRadius="2">
+                        <ContentPresenter
+                            x:Name="PART_Button"
+                            HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                            VerticalAlignment="{TemplateBinding VerticalContentAlignment}" />
                         <VisualStateManager.VisualStateGroups>
                             <VisualStateGroup Name="Common">
                                 <VisualState Name="Normal" />
                                 <VisualState Name="MouseOver">
                                     <Storyboard>
-                                        <ColorAnimation To="{StaticResource DefaultBackgroundHoverColor}"
-                                                        Storyboard.TargetName="Border"
-                                                        Storyboard.TargetProperty="(Button.Background).(SolidColorBrush.Color)" />
-                                        <ColorAnimation To="{StaticResource DefaultBorderHoverColor}"
-                                                        Storyboard.TargetName="Border"
-                                                        Storyboard.TargetProperty="(Button.BorderBrush).(SolidColorBrush.Color)" />
+                                        <ColorAnimation
+                                            Storyboard.TargetName="Border"
+                                            Storyboard.TargetProperty="(Button.Background).(SolidColorBrush.Color)"
+                                            To="{StaticResource DefaultBackgroundHoverColor}" />
+                                        <ColorAnimation
+                                            Storyboard.TargetName="Border"
+                                            Storyboard.TargetProperty="(Button.BorderBrush).(SolidColorBrush.Color)"
+                                            To="{StaticResource DefaultBorderHoverColor}" />
                                     </Storyboard>
                                 </VisualState>
                                 <VisualState Name="Pressed">
                                     <Storyboard>
-                                        <ColorAnimation To="{StaticResource DefaultBackgroundDownColor}"
-                                                        Storyboard.TargetName="Border"
-                                                        Storyboard.TargetProperty="(Button.Background).(SolidColorBrush.Color)" />
-                                        <ColorAnimation To="{StaticResource DefaultBorderDownColor}"
-                                                        Storyboard.TargetName="Border"
-                                                        Storyboard.TargetProperty="(Button.BorderBrush).(SolidColorBrush.Color)" />
+                                        <ColorAnimation
+                                            Storyboard.TargetName="Border"
+                                            Storyboard.TargetProperty="(Button.Background).(SolidColorBrush.Color)"
+                                            To="{StaticResource DefaultBackgroundDownColor}" />
+                                        <ColorAnimation
+                                            Storyboard.TargetName="Border"
+                                            Storyboard.TargetProperty="(Button.BorderBrush).(SolidColorBrush.Color)"
+                                            To="{StaticResource DefaultBorderDownColor}" />
                                     </Storyboard>
                                 </VisualState>
                                 <VisualStateGroup.Transitions>
-                                    <VisualTransition To="Normal" GeneratedDuration="00:00:00.2" />
-                                    <VisualTransition To="MouseOver" GeneratedDuration="00:00:00.2">
+                                    <VisualTransition GeneratedDuration="00:00:00.2" To="Normal" />
+                                    <VisualTransition GeneratedDuration="00:00:00.2" To="MouseOver">
                                         <VisualTransition.GeneratedEasingFunction>
                                             <ExponentialEase EasingMode="EaseOut" Exponent="10" />
                                         </VisualTransition.GeneratedEasingFunction>
                                     </VisualTransition>
-                                    <VisualTransition To="Pressed" GeneratedDuration="00:00:00.2">
+                                    <VisualTransition GeneratedDuration="00:00:00.2" To="Pressed">
                                         <VisualTransition.GeneratedEasingFunction>
                                             <ExponentialEase EasingMode="EaseOut" Exponent="10" />
                                         </VisualTransition.GeneratedEasingFunction>
                                     </VisualTransition>
-                                    <VisualTransition To="Focused" GeneratedDuration="00:00:00.2">
+                                    <VisualTransition GeneratedDuration="00:00:00.2" To="Focused">
                                         <VisualTransition.GeneratedEasingFunction>
                                             <ExponentialEase EasingMode="EaseOut" Exponent="10" />
                                         </VisualTransition.GeneratedEasingFunction>
@@ -103,49 +115,59 @@
     </Style>
     <!--#endregion-->
     <!--#region PrimaryBtn-->
-    <Style TargetType="{x:Type Button}" x:Key="PrimaryBtn" BasedOn="{StaticResource DefaultBtn}">
+    <Style
+        x:Key="PrimaryBtn"
+        BasedOn="{StaticResource DefaultBtn}"
+        TargetType="{x:Type Button}">
         <Setter Property="Background" Value="{DynamicResource PrimaryBackgroundColorBrush}" />
         <Setter Property="Foreground" Value="{DynamicResource PrimaryForegroundColorBrush}" />
         <Setter Property="BorderBrush" Value="{DynamicResource PrimaryBorderColorBrush}" />
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type Button}">
-                    <Border Padding="{TemplateBinding Padding}" x:Name="Border" BorderThickness="0"
-                            BorderBrush="{TemplateBinding BorderBrush}" Background="{TemplateBinding Background}"
-                            CornerRadius="2">
-                        <ContentPresenter x:Name="PART_Button"
-                                          VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
-                                          HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" />
+                    <Border
+                        x:Name="Border"
+                        Padding="{TemplateBinding Padding}"
+                        Background="{TemplateBinding Background}"
+                        BorderBrush="{TemplateBinding BorderBrush}"
+                        BorderThickness="0"
+                        CornerRadius="2">
+                        <ContentPresenter
+                            x:Name="PART_Button"
+                            HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                            VerticalAlignment="{TemplateBinding VerticalContentAlignment}" />
                         <VisualStateManager.VisualStateGroups>
                             <VisualStateGroup Name="Common">
                                 <VisualState Name="Normal" />
                                 <VisualState Name="MouseOver">
                                     <Storyboard>
-                                        <ColorAnimation To="{StaticResource PrimaryBackgroundHoverColor}"
-                                                        Storyboard.TargetName="Border"
-                                                        Storyboard.TargetProperty="(Button.Background).(SolidColorBrush.Color)" />
+                                        <ColorAnimation
+                                            Storyboard.TargetName="Border"
+                                            Storyboard.TargetProperty="(Button.Background).(SolidColorBrush.Color)"
+                                            To="{StaticResource PrimaryBackgroundHoverColor}" />
                                     </Storyboard>
                                 </VisualState>
                                 <VisualState Name="Pressed">
                                     <Storyboard>
-                                        <ColorAnimation To="{StaticResource PrimaryBackgroundDownColor}"
-                                                        Storyboard.TargetName="Border"
-                                                        Storyboard.TargetProperty="(Button.Background).(SolidColorBrush.Color)" />
+                                        <ColorAnimation
+                                            Storyboard.TargetName="Border"
+                                            Storyboard.TargetProperty="(Button.Background).(SolidColorBrush.Color)"
+                                            To="{StaticResource PrimaryBackgroundDownColor}" />
                                     </Storyboard>
                                 </VisualState>
                                 <VisualStateGroup.Transitions>
-                                    <VisualTransition To="Normal" GeneratedDuration="00:00:00.2" />
-                                    <VisualTransition To="MouseOver" GeneratedDuration="00:00:00.2">
+                                    <VisualTransition GeneratedDuration="00:00:00.2" To="Normal" />
+                                    <VisualTransition GeneratedDuration="00:00:00.2" To="MouseOver">
                                         <VisualTransition.GeneratedEasingFunction>
                                             <ExponentialEase EasingMode="EaseOut" Exponent="10" />
                                         </VisualTransition.GeneratedEasingFunction>
                                     </VisualTransition>
-                                    <VisualTransition To="Pressed" GeneratedDuration="00:00:00.2">
+                                    <VisualTransition GeneratedDuration="00:00:00.2" To="Pressed">
                                         <VisualTransition.GeneratedEasingFunction>
                                             <ExponentialEase EasingMode="EaseOut" Exponent="10" />
                                         </VisualTransition.GeneratedEasingFunction>
                                     </VisualTransition>
-                                    <VisualTransition To="Focused" GeneratedDuration="00:00:00.2">
+                                    <VisualTransition GeneratedDuration="00:00:00.2" To="Focused">
                                         <VisualTransition.GeneratedEasingFunction>
                                             <ExponentialEase EasingMode="EaseOut" Exponent="10" />
                                         </VisualTransition.GeneratedEasingFunction>
@@ -160,49 +182,59 @@
     </Style>
     <!--#endregion-->
     <!--#region SuccessBtn-->
-    <Style TargetType="{x:Type Button}" x:Key="SuccessBtn" BasedOn="{StaticResource DefaultBtn}">
+    <Style
+        x:Key="SuccessBtn"
+        BasedOn="{StaticResource DefaultBtn}"
+        TargetType="{x:Type Button}">
         <Setter Property="Background" Value="{DynamicResource SuccessBackgroundColorBrush}" />
         <Setter Property="Foreground" Value="{DynamicResource PrimaryForegroundColorBrush}" />
         <Setter Property="BorderBrush" Value="{DynamicResource PrimaryBorderColorBrush}" />
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type Button}">
-                    <Border Padding="{TemplateBinding Padding}" x:Name="Border" BorderThickness="0"
-                            BorderBrush="{TemplateBinding BorderBrush}" Background="{TemplateBinding Background}"
-                            CornerRadius="2">
-                        <ContentPresenter x:Name="PART_Button"
-                                          VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
-                                          HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" />
+                    <Border
+                        x:Name="Border"
+                        Padding="{TemplateBinding Padding}"
+                        Background="{TemplateBinding Background}"
+                        BorderBrush="{TemplateBinding BorderBrush}"
+                        BorderThickness="0"
+                        CornerRadius="2">
+                        <ContentPresenter
+                            x:Name="PART_Button"
+                            HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                            VerticalAlignment="{TemplateBinding VerticalContentAlignment}" />
                         <VisualStateManager.VisualStateGroups>
                             <VisualStateGroup Name="Common">
                                 <VisualState Name="Normal" />
                                 <VisualState Name="MouseOver">
                                     <Storyboard>
-                                        <ColorAnimation To="{StaticResource SuccessBackgroundHoverColor}"
-                                                        Storyboard.TargetName="Border"
-                                                        Storyboard.TargetProperty="(Button.Background).(SolidColorBrush.Color)" />
+                                        <ColorAnimation
+                                            Storyboard.TargetName="Border"
+                                            Storyboard.TargetProperty="(Button.Background).(SolidColorBrush.Color)"
+                                            To="{StaticResource SuccessBackgroundHoverColor}" />
                                     </Storyboard>
                                 </VisualState>
                                 <VisualState Name="Pressed">
                                     <Storyboard>
-                                        <ColorAnimation To="{StaticResource SuccessBackgroundDownColor}"
-                                                        Storyboard.TargetName="Border"
-                                                        Storyboard.TargetProperty="(Button.Background).(SolidColorBrush.Color)" />
+                                        <ColorAnimation
+                                            Storyboard.TargetName="Border"
+                                            Storyboard.TargetProperty="(Button.Background).(SolidColorBrush.Color)"
+                                            To="{StaticResource SuccessBackgroundDownColor}" />
                                     </Storyboard>
                                 </VisualState>
                                 <VisualStateGroup.Transitions>
-                                    <VisualTransition To="Normal" GeneratedDuration="00:00:00.2" />
-                                    <VisualTransition To="MouseOver" GeneratedDuration="00:00:00.2">
+                                    <VisualTransition GeneratedDuration="00:00:00.2" To="Normal" />
+                                    <VisualTransition GeneratedDuration="00:00:00.2" To="MouseOver">
                                         <VisualTransition.GeneratedEasingFunction>
                                             <ExponentialEase EasingMode="EaseOut" Exponent="10" />
                                         </VisualTransition.GeneratedEasingFunction>
                                     </VisualTransition>
-                                    <VisualTransition To="Pressed" GeneratedDuration="00:00:00.2">
+                                    <VisualTransition GeneratedDuration="00:00:00.2" To="Pressed">
                                         <VisualTransition.GeneratedEasingFunction>
                                             <ExponentialEase EasingMode="EaseOut" Exponent="10" />
                                         </VisualTransition.GeneratedEasingFunction>
                                     </VisualTransition>
-                                    <VisualTransition To="Focused" GeneratedDuration="00:00:00.2">
+                                    <VisualTransition GeneratedDuration="00:00:00.2" To="Focused">
                                         <VisualTransition.GeneratedEasingFunction>
                                             <ExponentialEase EasingMode="EaseOut" Exponent="10" />
                                         </VisualTransition.GeneratedEasingFunction>
@@ -217,50 +249,60 @@
     </Style>
     <!--#endregion-->
     <!--#region WarningBtn-->
-    <Style TargetType="{x:Type Button}" x:Key="WarningBtn" BasedOn="{StaticResource DefaultBtn}">
+    <Style
+        x:Key="WarningBtn"
+        BasedOn="{StaticResource DefaultBtn}"
+        TargetType="{x:Type Button}">
         <Setter Property="Background" Value="{DynamicResource WarningBackgroundColorBrush}" />
         <Setter Property="Foreground" Value="{DynamicResource PrimaryForegroundColorBrush}" />
         <Setter Property="BorderBrush" Value="{DynamicResource PrimaryBorderColorBrush}" />
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type Button}">
-                    <Border Padding="{TemplateBinding Padding}" x:Name="Border" BorderThickness="0"
-                            BorderBrush="{TemplateBinding BorderBrush}" Background="{TemplateBinding Background}"
-                            CornerRadius="2">
-                        <ContentPresenter x:Name="PART_Button"
-                                          VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
-                                          HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" />
+                    <Border
+                        x:Name="Border"
+                        Padding="{TemplateBinding Padding}"
+                        Background="{TemplateBinding Background}"
+                        BorderBrush="{TemplateBinding BorderBrush}"
+                        BorderThickness="0"
+                        CornerRadius="2">
+                        <ContentPresenter
+                            x:Name="PART_Button"
+                            HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                            VerticalAlignment="{TemplateBinding VerticalContentAlignment}" />
                         <VisualStateManager.VisualStateGroups>
                             <VisualStateGroup Name="Common">
                                 <VisualState Name="Normal" />
                                 <VisualState Name="MouseOver">
                                     <Storyboard>
-                                        <ColorAnimation To="{StaticResource WarningBackgroundHoverColor}"
-                                                        Storyboard.TargetName="Border"
-                                                        Storyboard.TargetProperty="(Button.Background).(SolidColorBrush.Color)" />
+                                        <ColorAnimation
+                                            Storyboard.TargetName="Border"
+                                            Storyboard.TargetProperty="(Button.Background).(SolidColorBrush.Color)"
+                                            To="{StaticResource WarningBackgroundHoverColor}" />
                                     </Storyboard>
                                 </VisualState>
                                 <VisualState Name="Pressed">
 
                                     <Storyboard>
-                                        <ColorAnimation To="{StaticResource WarningBackgroundDownColor}"
-                                                        Storyboard.TargetName="Border"
-                                                        Storyboard.TargetProperty="(Button.Background).(SolidColorBrush.Color)" />
+                                        <ColorAnimation
+                                            Storyboard.TargetName="Border"
+                                            Storyboard.TargetProperty="(Button.Background).(SolidColorBrush.Color)"
+                                            To="{StaticResource WarningBackgroundDownColor}" />
                                     </Storyboard>
                                 </VisualState>
                                 <VisualStateGroup.Transitions>
-                                    <VisualTransition To="Normal" GeneratedDuration="00:00:00.2" />
-                                    <VisualTransition To="MouseOver" GeneratedDuration="00:00:00.2">
+                                    <VisualTransition GeneratedDuration="00:00:00.2" To="Normal" />
+                                    <VisualTransition GeneratedDuration="00:00:00.2" To="MouseOver">
                                         <VisualTransition.GeneratedEasingFunction>
                                             <ExponentialEase EasingMode="EaseOut" Exponent="10" />
                                         </VisualTransition.GeneratedEasingFunction>
                                     </VisualTransition>
-                                    <VisualTransition To="Pressed" GeneratedDuration="00:00:00.2">
+                                    <VisualTransition GeneratedDuration="00:00:00.2" To="Pressed">
                                         <VisualTransition.GeneratedEasingFunction>
                                             <ExponentialEase EasingMode="EaseOut" Exponent="10" />
                                         </VisualTransition.GeneratedEasingFunction>
                                     </VisualTransition>
-                                    <VisualTransition To="Focused" GeneratedDuration="00:00:00.2">
+                                    <VisualTransition GeneratedDuration="00:00:00.2" To="Focused">
                                         <VisualTransition.GeneratedEasingFunction>
                                             <ExponentialEase EasingMode="EaseOut" Exponent="10" />
                                         </VisualTransition.GeneratedEasingFunction>
@@ -275,49 +317,59 @@
     </Style>
     <!--#endregion-->
     <!--#region DangerBtn-->
-    <Style TargetType="{x:Type Button}" x:Key="DangerBtn" BasedOn="{StaticResource DefaultBtn}">
+    <Style
+        x:Key="DangerBtn"
+        BasedOn="{StaticResource DefaultBtn}"
+        TargetType="{x:Type Button}">
         <Setter Property="Background" Value="{DynamicResource DangerBackgroundColorBrush}" />
         <Setter Property="Foreground" Value="{DynamicResource PrimaryForegroundColorBrush}" />
         <Setter Property="BorderBrush" Value="{DynamicResource PrimaryBorderColorBrush}" />
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type Button}">
-                    <Border Padding="{TemplateBinding Padding}" x:Name="Border" BorderThickness="0"
-                            BorderBrush="{TemplateBinding BorderBrush}" Background="{TemplateBinding Background}"
-                            CornerRadius="2">
-                        <ContentPresenter x:Name="PART_Button"
-                                          VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
-                                          HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" />
+                    <Border
+                        x:Name="Border"
+                        Padding="{TemplateBinding Padding}"
+                        Background="{TemplateBinding Background}"
+                        BorderBrush="{TemplateBinding BorderBrush}"
+                        BorderThickness="0"
+                        CornerRadius="2">
+                        <ContentPresenter
+                            x:Name="PART_Button"
+                            HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                            VerticalAlignment="{TemplateBinding VerticalContentAlignment}" />
                         <VisualStateManager.VisualStateGroups>
                             <VisualStateGroup Name="Common">
                                 <VisualState Name="Normal" />
                                 <VisualState Name="MouseOver">
                                     <Storyboard>
-                                        <ColorAnimation To="{StaticResource DangerBackgroundHoverColor}"
-                                                        Storyboard.TargetName="Border"
-                                                        Storyboard.TargetProperty="(Button.Background).(SolidColorBrush.Color)" />
+                                        <ColorAnimation
+                                            Storyboard.TargetName="Border"
+                                            Storyboard.TargetProperty="(Button.Background).(SolidColorBrush.Color)"
+                                            To="{StaticResource DangerBackgroundHoverColor}" />
                                     </Storyboard>
                                 </VisualState>
                                 <VisualState Name="Pressed">
                                     <Storyboard>
-                                        <ColorAnimation To="{StaticResource DangerBackgroundDownColor}"
-                                                        Storyboard.TargetName="Border"
-                                                        Storyboard.TargetProperty="(Button.Background).(SolidColorBrush.Color)" />
+                                        <ColorAnimation
+                                            Storyboard.TargetName="Border"
+                                            Storyboard.TargetProperty="(Button.Background).(SolidColorBrush.Color)"
+                                            To="{StaticResource DangerBackgroundDownColor}" />
                                     </Storyboard>
                                 </VisualState>
                                 <VisualStateGroup.Transitions>
-                                    <VisualTransition To="Normal" GeneratedDuration="00:00:00.2" />
-                                    <VisualTransition To="MouseOver" GeneratedDuration="00:00:00.2">
+                                    <VisualTransition GeneratedDuration="00:00:00.2" To="Normal" />
+                                    <VisualTransition GeneratedDuration="00:00:00.2" To="MouseOver">
                                         <VisualTransition.GeneratedEasingFunction>
                                             <ExponentialEase EasingMode="EaseOut" Exponent="10" />
                                         </VisualTransition.GeneratedEasingFunction>
                                     </VisualTransition>
-                                    <VisualTransition To="Pressed" GeneratedDuration="00:00:00.2">
+                                    <VisualTransition GeneratedDuration="00:00:00.2" To="Pressed">
                                         <VisualTransition.GeneratedEasingFunction>
                                             <ExponentialEase EasingMode="EaseOut" Exponent="10" />
                                         </VisualTransition.GeneratedEasingFunction>
                                     </VisualTransition>
-                                    <VisualTransition To="Focused" GeneratedDuration="00:00:00.2">
+                                    <VisualTransition GeneratedDuration="00:00:00.2" To="Focused">
                                         <VisualTransition.GeneratedEasingFunction>
                                             <ExponentialEase EasingMode="EaseOut" Exponent="10" />
                                         </VisualTransition.GeneratedEasingFunction>
@@ -332,49 +384,59 @@
     </Style>
     <!--#endregion-->
     <!--#region InfoBtn-->
-    <Style TargetType="{x:Type Button}" x:Key="InfoBtn" BasedOn="{StaticResource DefaultBtn}">
+    <Style
+        x:Key="InfoBtn"
+        BasedOn="{StaticResource DefaultBtn}"
+        TargetType="{x:Type Button}">
         <Setter Property="Background" Value="{DynamicResource InfoBackgroundColorBrush}" />
         <Setter Property="Foreground" Value="{DynamicResource PrimaryForegroundColorBrush}" />
         <Setter Property="BorderBrush" Value="{DynamicResource PrimaryBorderColorBrush}" />
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type Button}">
-                    <Border Padding="{TemplateBinding Padding}" x:Name="Border" BorderThickness="0"
-                            BorderBrush="{TemplateBinding BorderBrush}" Background="{TemplateBinding Background}"
-                            CornerRadius="2">
-                        <ContentPresenter x:Name="PART_Button"
-                                          VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
-                                          HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" />
+                    <Border
+                        x:Name="Border"
+                        Padding="{TemplateBinding Padding}"
+                        Background="{TemplateBinding Background}"
+                        BorderBrush="{TemplateBinding BorderBrush}"
+                        BorderThickness="0"
+                        CornerRadius="2">
+                        <ContentPresenter
+                            x:Name="PART_Button"
+                            HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                            VerticalAlignment="{TemplateBinding VerticalContentAlignment}" />
                         <VisualStateManager.VisualStateGroups>
                             <VisualStateGroup Name="Common">
                                 <VisualState Name="Normal" />
                                 <VisualState Name="MouseOver">
                                     <Storyboard>
-                                        <ColorAnimation To="{StaticResource InfoBackgroundHoverColor}"
-                                                        Storyboard.TargetName="Border"
-                                                        Storyboard.TargetProperty="(Button.Background).(SolidColorBrush.Color)" />
+                                        <ColorAnimation
+                                            Storyboard.TargetName="Border"
+                                            Storyboard.TargetProperty="(Button.Background).(SolidColorBrush.Color)"
+                                            To="{StaticResource InfoBackgroundHoverColor}" />
                                     </Storyboard>
                                 </VisualState>
                                 <VisualState Name="Pressed">
                                     <Storyboard>
-                                        <ColorAnimation To="{StaticResource InfoBackgroundDownColor}"
-                                                        Storyboard.TargetName="Border"
-                                                        Storyboard.TargetProperty="(Button.Background).(SolidColorBrush.Color)" />
+                                        <ColorAnimation
+                                            Storyboard.TargetName="Border"
+                                            Storyboard.TargetProperty="(Button.Background).(SolidColorBrush.Color)"
+                                            To="{StaticResource InfoBackgroundDownColor}" />
                                     </Storyboard>
                                 </VisualState>
                                 <VisualStateGroup.Transitions>
-                                    <VisualTransition To="Normal" GeneratedDuration="00:00:00.2" />
-                                    <VisualTransition To="MouseOver" GeneratedDuration="00:00:00.2">
+                                    <VisualTransition GeneratedDuration="00:00:00.2" To="Normal" />
+                                    <VisualTransition GeneratedDuration="00:00:00.2" To="MouseOver">
                                         <VisualTransition.GeneratedEasingFunction>
                                             <ExponentialEase EasingMode="EaseOut" Exponent="10" />
                                         </VisualTransition.GeneratedEasingFunction>
                                     </VisualTransition>
-                                    <VisualTransition To="Pressed" GeneratedDuration="00:00:00.2">
+                                    <VisualTransition GeneratedDuration="00:00:00.2" To="Pressed">
                                         <VisualTransition.GeneratedEasingFunction>
                                             <ExponentialEase EasingMode="EaseOut" Exponent="10" />
                                         </VisualTransition.GeneratedEasingFunction>
                                     </VisualTransition>
-                                    <VisualTransition To="Focused" GeneratedDuration="00:00:00.2">
+                                    <VisualTransition GeneratedDuration="00:00:00.2" To="Focused">
                                         <VisualTransition.GeneratedEasingFunction>
                                             <ExponentialEase EasingMode="EaseOut" Exponent="10" />
                                         </VisualTransition.GeneratedEasingFunction>
@@ -389,7 +451,7 @@
     </Style>
     <!--#endregion-->
     <!--#region Set DefaultBtn style as Default style for Button-->
-    <Style TargetType="{x:Type Button}" BasedOn="{StaticResource DefaultBtn}" />
+    <Style BasedOn="{StaticResource DefaultBtn}" TargetType="{x:Type Button}" />
     <!--#endregion-->
     <!--#endregion-->
 </ResourceDictionary>
