@@ -7,7 +7,6 @@
     <ResourceDictionary.MergedDictionaries>
         <ResourceDictionary Source="../Colors.xaml" />
     </ResourceDictionary.MergedDictionaries>
-
     <Style
         x:Key="SliderThumb"
         d:IsControlPart="True"
@@ -42,7 +41,6 @@
             </Setter.Value>
         </Setter>
     </Style>
-
     <Style
         x:Key="SimpleScrollRepeatButtonStyle"
         d:IsControlPart="True"
@@ -64,7 +62,6 @@
             </Setter.Value>
         </Setter>
     </Style>
-
     <Style x:Key="ProgressBarForSlider" TargetType="{x:Type ProgressBar}">
         <Setter Property="OverridesDefaultStyle" Value="True" />
         <Setter Property="BorderThickness" Value="0"/>
@@ -88,7 +85,6 @@
             </Setter.Value>
         </Setter>
     </Style>
-
     <Style x:Key="DefaultSlider" TargetType="{x:Type Slider}">
         <Setter Property="Background" Value="{DynamicResource Static.Slider.Brush}" />
         <Setter Property="Foreground" Value="{DynamicResource Static.Thumb.Brush}"/>
@@ -172,7 +168,6 @@
             </Setter.Value>
         </Setter>
     </Style>
-
     <Style
         x:Key="PrimarySlider"
         BasedOn="{StaticResource DefaultSlider}"
@@ -180,35 +175,29 @@
         <Setter Property="BorderBrush" Value="{DynamicResource Static.Primary.Background.Brush}" />
         <Setter Property="Foreground" Value="{DynamicResource Static.Primary.Background.Brush}"/>
     </Style>
-
     <Style
         x:Key="WarningSlider"
         BasedOn="{StaticResource DefaultSlider}"
         TargetType="{x:Type Slider}">
         <Setter Property="Foreground" Value="{DynamicResource Static.Warning.Background.Brush}"/>
     </Style>
-
     <Style
         x:Key="SuccessSlider"
         BasedOn="{StaticResource DefaultSlider}"
         TargetType="{x:Type Slider}">
         <Setter Property="Foreground" Value="{DynamicResource Static.Success.Background.Brush}" />
     </Style>
-
     <Style
         x:Key="DangerSlider"
         BasedOn="{StaticResource DefaultSlider}"
         TargetType="{x:Type Slider}">
         <Setter Property="Foreground" Value="{DynamicResource Static.Danger.Background.Brush}" />
     </Style>
-
     <Style
         x:Key="InfoSlider"
         BasedOn="{StaticResource DefaultSlider}"
         TargetType="{x:Type Slider}">
         <Setter Property="Foreground" Value="{DynamicResource Static.Info.Background.Brush}"/>
     </Style>
-
     <Style BasedOn="{StaticResource DefaultSlider}" TargetType="{x:Type Slider}" />
-
 </ResourceDictionary>
