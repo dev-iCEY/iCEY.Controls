@@ -13,11 +13,14 @@ Includes the following styles:
 * MenuPopup
 * ProgressBar
 * ToogleButton
+* Label
 
 At the moment the following were realized:
 * Button
 * Slider
 * Expander [ Partially ]
+* Label [ With styles ]
+* TextBlock [ With styles ]
 
 Button styles preview:
 
