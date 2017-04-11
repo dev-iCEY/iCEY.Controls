@@ -22,9 +22,13 @@ At the moment the following were realized:
 * Label [ With styles ]
 * TextBlock [ With styles ]
 
+***
+
 Button styles preview:
 
 ![Buttons](http://dl4.joxi.net/drive/2017/04/10/0002/2330/141594/94/872f905025.png)
+
+***
 
 Slider styles preview
 
@@ -43,6 +47,18 @@ With TickPlacement = BottomRight
 With TickPlacement = Both
 
 ![Sliders](https://dl3.joxi.net/drive/2017/04/11/0002/2330/141594/94/82c7fd7526.png)
+
+***
+
+TexBlock styles:
+
+![TextBlocks](https://dl4.joxi.net/drive/2017/04/11/0002/2330/141594/94/c4f39d56ad.png)
+
+***
+
+Label Styles:
+
+![Labels](https://dl3.joxi.net/drive/2017/04/11/0002/2330/141594/94/9162cb0bda.png)
 
 ***
 
