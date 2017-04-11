@@ -132,4 +132,7 @@
     <Color x:Key="ProgressIndeterminateColor3">#4C000000</Color>
     <Color x:Key="ProgressIndeterminateColor4">#4C000000</Color>
 
+
+    <Color x:Key="TexBlock.Muted.Color">#FFAAACB2</Color>
+
 </ResourceDictionary>

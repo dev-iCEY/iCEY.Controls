@@ -1,0 +1,64 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Style x:Key="TextMuted" TargetType="{x:Type TextBlock}">
+        <Setter Property="OverridesDefaultStyle" Value="True" />
+        <Setter Property="HorizontalAlignment" Value="Left" />
+        <Setter Property="VerticalAlignment" Value="Top" />
+        <Setter Property="FontSize" Value="12" />
+        <Setter Property="Padding" Value="0,0,0,8.5" />
+        <Setter Property="Foreground">
+            <Setter.Value>
+                <SolidColorBrush Color="{DynamicResource TexBlock.Muted.Color}" />
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style
+        x:Key="TextPrimary"
+        BasedOn="{StaticResource TextMuted}"
+        TargetType="{x:Type TextBlock}">
+        <Setter Property="Foreground">
+            <Setter.Value>
+                <SolidColorBrush Color="{DynamicResource Static.Primary.Background.Color}" />
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style
+        x:Key="TextSuccess"
+        BasedOn="{StaticResource TextMuted}"
+        TargetType="{x:Type TextBlock}">
+        <Setter Property="Foreground">
+            <Setter.Value>
+                <SolidColorBrush Color="{DynamicResource Static.Success.Background.Color}" />
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style
+        x:Key="TextInfo"
+        BasedOn="{StaticResource TextMuted}"
+        TargetType="{x:Type TextBlock}">
+        <Setter Property="Foreground">
+            <Setter.Value>
+                <SolidColorBrush Color="{DynamicResource Static.Info.Background.Color}" />
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style
+        x:Key="TextWarning"
+        BasedOn="{StaticResource TextMuted}"
+        TargetType="{x:Type TextBlock}">
+        <Setter Property="Foreground">
+            <Setter.Value>
+                <SolidColorBrush Color="{DynamicResource Static.Warning.Background.Color}" />
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style
+        x:Key="TextDanger"
+        BasedOn="{StaticResource TextMuted}"
+        TargetType="{x:Type TextBlock}">
+        <Setter Property="Foreground">
+            <Setter.Value>
+                <SolidColorBrush Color="{DynamicResource Static.Danger.Background.Color}" />
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>

@@ -5,5 +5,7 @@
         <ResourceDictionary Source="./Controls/Sliders.xaml" />
         <ResourceDictionary Source="./Controls/Expanders.xaml" />
         <ResourceDictionary Source="./Controls/ProgressBars.xaml" />
+        <ResourceDictionary Source="./Controls/Typography/TextBlocks.xaml" />
+        <ResourceDictionary Source="./Controls/Typography/Labels.xaml" />
     </ResourceDictionary.MergedDictionaries>
 </ResourceDictionary>

@@ -69,149 +69,152 @@
                     <StackPanel HorizontalAlignment="Left" IsEnabled="{Binding ElementName=SetSlidersValue, Path=IsChecked}">
                         <GroupBox Header="Default slider">
                             <StackPanel>
-                                <Slider Value="1" Width="300" Margin="0,2.5" />
                                 <Slider
-                                    Value="2"
                                     Width="300"
                                     Margin="0,2.5"
-                                    Style="{StaticResource PrimarySlider}" />
+                                    Value="1" />
                                 <Slider
-                                    Value="3"
                                     Width="300"
                                     Margin="0,2.5"
-                                    Style="{StaticResource SuccessSlider}" />
+                                    Style="{StaticResource PrimarySlider}"
+                                    Value="2" />
                                 <Slider
-                                    Value="4"
                                     Width="300"
                                     Margin="0,2.5"
-                                    Style="{StaticResource WarningSlider}" />
+                                    Style="{StaticResource SuccessSlider}"
+                                    Value="3" />
                                 <Slider
-                                    Value="5"
                                     Width="300"
                                     Margin="0,2.5"
-                                    Style="{StaticResource DangerSlider}" />
+                                    Style="{StaticResource WarningSlider}"
+                                    Value="4" />
                                 <Slider
-                                    Value="6"
                                     Width="300"
                                     Margin="0,2.5"
-                                    Style="{StaticResource InfoSlider}" />
+                                    Style="{StaticResource DangerSlider}"
+                                    Value="5" />
+                                <Slider
+                                    Width="300"
+                                    Margin="0,2.5"
+                                    Style="{StaticResource InfoSlider}"
+                                    Value="6" />
                             </StackPanel>
                         </GroupBox>
                         <GroupBox Header="TickPlacement TopLeft">
                             <StackPanel>
                                 <Slider
-                                    Value="1"
                                     Width="300"
                                     Margin="2.5"
-                                    TickPlacement="TopLeft" />
+                                    TickPlacement="TopLeft"
+                                    Value="1" />
                                 <Slider
-                                    Value="2"
                                     Width="300"
                                     Margin="2.5"
                                     Style="{StaticResource PrimarySlider}"
-                                    TickPlacement="TopLeft" />
+                                    TickPlacement="TopLeft"
+                                    Value="2" />
                                 <Slider
-                                    Value="3"
                                     Width="300"
                                     Margin="2.5"
                                     Style="{StaticResource SuccessSlider}"
-                                    TickPlacement="TopLeft" />
+                                    TickPlacement="TopLeft"
+                                    Value="3" />
                                 <Slider
-                                    Value="4"
                                     Width="300"
                                     Margin="2.5"
                                     Style="{StaticResource WarningSlider}"
-                                    TickPlacement="TopLeft" />
+                                    TickPlacement="TopLeft"
+                                    Value="4" />
                                 <Slider
-                                    Value="5"
                                     Width="300"
                                     Margin="2.5"
                                     Style="{StaticResource DangerSlider}"
-                                    TickPlacement="TopLeft" />
+                                    TickPlacement="TopLeft"
+                                    Value="5" />
                                 <Slider
-                                    Value="6"
                                     Width="300"
                                     Margin="2.5"
                                     Style="{StaticResource InfoSlider}"
-                                    TickPlacement="TopLeft" />
+                                    TickPlacement="TopLeft"
+                                    Value="6" />
                             </StackPanel>
                         </GroupBox>
                         <GroupBox Header="TickPlacement BottomRight">
                             <StackPanel>
                                 <Slider
-                                    Value="1"
                                     Width="300"
                                     Margin="2.5"
-                                    TickPlacement="BottomRight" />
+                                    TickPlacement="BottomRight"
+                                    Value="1" />
                                 <Slider
-                                    Value="2"
                                     Width="300"
                                     Margin="2.5"
                                     Style="{StaticResource PrimarySlider}"
-                                    TickPlacement="BottomRight" />
+                                    TickPlacement="BottomRight"
+                                    Value="2" />
                                 <Slider
-                                    Value="3"
                                     Width="300"
                                     Margin="2.5"
                                     Style="{StaticResource SuccessSlider}"
-                                    TickPlacement="BottomRight" />
+                                    TickPlacement="BottomRight"
+                                    Value="3" />
                                 <Slider
-                                    Value="4"
                                     Width="300"
                                     Margin="2.5"
                                     Style="{StaticResource WarningSlider}"
-                                    TickPlacement="BottomRight" />
+                                    TickPlacement="BottomRight"
+                                    Value="4" />
                                 <Slider
-                                    Value="5"
                                     Width="300"
                                     Margin="2.5"
                                     Style="{StaticResource DangerSlider}"
-                                    TickPlacement="BottomRight" />
+                                    TickPlacement="BottomRight"
+                                    Value="5" />
                                 <Slider
-                                    Value="6"
                                     Width="300"
                                     Margin="2.5"
                                     Style="{StaticResource InfoSlider}"
-                                    TickPlacement="BottomRight" />
+                                    TickPlacement="BottomRight"
+                                    Value="6" />
                             </StackPanel>
                         </GroupBox>
                         <GroupBox Header=" TickPlacement Both">
                             <StackPanel>
                                 <Slider
-                                    Value="1"
                                     Width="300"
                                     Margin="2.5"
-                                    TickPlacement="Both" />
+                                    TickPlacement="Both"
+                                    Value="1" />
                                 <Slider
                                     Width="300"
-                                    Value="2"
                                     Margin="2.5"
                                     Style="{StaticResource PrimarySlider}"
-                                    TickPlacement="Both" />
+                                    TickPlacement="Both"
+                                    Value="2" />
                                 <Slider
                                     Width="300"
-                                    Value="3"
                                     Margin="2.5"
                                     Style="{StaticResource SuccessSlider}"
-                                    TickPlacement="Both" />
+                                    TickPlacement="Both"
+                                    Value="3" />
                                 <Slider
                                     Width="300"
-                                    Value="4"
                                     Margin="2.5"
                                     Style="{StaticResource WarningSlider}"
-                                    TickPlacement="Both" />
+                                    TickPlacement="Both"
+                                    Value="4" />
                                 <Slider
                                     Width="300"
-                                    Value="5"
                                     Margin="2.5"
                                     Style="{StaticResource DangerSlider}"
-                                    TickPlacement="Both" />
+                                    TickPlacement="Both"
+                                    Value="5" />
                                 <Slider
                                     Width="300"
-                                    Value="6"
                                     Margin="2.5"
                                     Style="{StaticResource InfoSlider}"
-                                    TickPlacement="Both" />
+                                    TickPlacement="Both"
+                                    Value="6" />
                             </StackPanel>
                         </GroupBox>
                     </StackPanel>
@@ -226,19 +229,69 @@
 
             <!--#region ProgressBars-->
             <Expander
-                Height="154"
                 Margin="5"
-                Header="Progress Bar">
-                <StackPanel>
-                    <ProgressBar
-                        Margin="10"
-                        IsIndeterminate="True"
-                        Maximum="100"
-                        Value="{Binding ElementName=SliderProgressBar, Path=Value}" />
-                    <Slider
-                        x:Name="SliderProgressBar"
-                        Margin="10"
-                        Maximum="100" />
+                HorizontalAlignment="Left"
+                Header="TextBlock">
+                <StackPanel MaxWidth="640" Margin="5">
+                    <TextBlock
+                        x:Name="TextMuted"
+                        Style="{DynamicResource TextMuted}"
+                        Text="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                        TextTrimming="CharacterEllipsis"
+                        TextWrapping="Wrap" />
+                    <TextBlock
+                        Style="{DynamicResource TextPrimary}"
+                        Text="{Binding ElementName=TextMuted, Path=Text}"
+                        TextTrimming="CharacterEllipsis"
+                        TextWrapping="Wrap" />
+                    <TextBlock
+                        Style="{DynamicResource TextSuccess}"
+                        Text="{Binding ElementName=TextMuted, Path=Text}"
+                        TextTrimming="CharacterEllipsis"
+                        TextWrapping="Wrap" />
+                    <TextBlock
+                        Style="{DynamicResource TextWarning}"
+                        Text="{Binding ElementName=TextMuted, Path=Text}"
+                        TextTrimming="CharacterEllipsis"
+                        TextWrapping="Wrap" />
+                    <TextBlock
+                        Style="{DynamicResource TextInfo}"
+                        Text="{Binding ElementName=TextMuted, Path=Text}"
+                        TextTrimming="CharacterEllipsis"
+                        TextWrapping="Wrap" />
+                    <TextBlock
+                        Style="{DynamicResource TextDanger}"
+                        Text="{Binding ElementName=TextMuted, Path=Text}"
+                        TextTrimming="CharacterEllipsis"
+                        TextWrapping="Wrap" />
+                </StackPanel>
+            </Expander>
+            <Expander
+                Margin="5"
+                HorizontalAlignment="Left"
+                Header="Labels">
+                <StackPanel Margin="2.5" Orientation="Horizontal">
+                    <Label Margin="2.5" Content="Default" />
+                    <Label
+                        Margin="2.5"
+                        Content="Primary"
+                        Style="{DynamicResource PrimaryLabel}" />
+                    <Label
+                        Margin="2.5"
+                        Content="Success"
+                        Style="{DynamicResource SuccessLabel}" />
+                    <Label
+                        Margin="2.5"
+                        Content="Info"
+                        Style="{DynamicResource InfoLabel}" />
+                    <Label
+                        Margin="2.5"
+                        Content="Warning"
+                        Style="{DynamicResource WarningLabel}" />
+                    <Label
+                        Margin="2.5"
+                        Content="Danger"
+                        Style="{DynamicResource DangerLabel}" />
                 </StackPanel>
             </Expander>
             <!--#endregion-->
