@@ -69,24 +69,29 @@
                     <StackPanel HorizontalAlignment="Left" IsEnabled="{Binding ElementName=SetSlidersValue, Path=IsChecked}">
                         <GroupBox Header="Default slider">
                             <StackPanel>
-                                <Slider Width="300" Margin="0,2.5" />
+                                <Slider Value="1" Width="300" Margin="0,2.5" />
                                 <Slider
+                                    Value="2"
                                     Width="300"
                                     Margin="0,2.5"
                                     Style="{StaticResource PrimarySlider}" />
                                 <Slider
+                                    Value="3"
                                     Width="300"
                                     Margin="0,2.5"
                                     Style="{StaticResource SuccessSlider}" />
                                 <Slider
+                                    Value="4"
                                     Width="300"
                                     Margin="0,2.5"
                                     Style="{StaticResource WarningSlider}" />
                                 <Slider
+                                    Value="5"
                                     Width="300"
                                     Margin="0,2.5"
                                     Style="{StaticResource DangerSlider}" />
                                 <Slider
+                                    Value="6"
                                     Width="300"
                                     Margin="0,2.5"
                                     Style="{StaticResource InfoSlider}" />
@@ -95,30 +100,36 @@
                         <GroupBox Header="TickPlacement TopLeft">
                             <StackPanel>
                                 <Slider
+                                    Value="1"
                                     Width="300"
                                     Margin="2.5"
                                     TickPlacement="TopLeft" />
                                 <Slider
+                                    Value="2"
                                     Width="300"
                                     Margin="2.5"
                                     Style="{StaticResource PrimarySlider}"
                                     TickPlacement="TopLeft" />
                                 <Slider
+                                    Value="3"
                                     Width="300"
                                     Margin="2.5"
                                     Style="{StaticResource SuccessSlider}"
                                     TickPlacement="TopLeft" />
                                 <Slider
+                                    Value="4"
                                     Width="300"
                                     Margin="2.5"
                                     Style="{StaticResource WarningSlider}"
                                     TickPlacement="TopLeft" />
                                 <Slider
+                                    Value="5"
                                     Width="300"
                                     Margin="2.5"
                                     Style="{StaticResource DangerSlider}"
                                     TickPlacement="TopLeft" />
                                 <Slider
+                                    Value="6"
                                     Width="300"
                                     Margin="2.5"
                                     Style="{StaticResource InfoSlider}"
@@ -128,30 +139,36 @@
                         <GroupBox Header="TickPlacement BottomRight">
                             <StackPanel>
                                 <Slider
+                                    Value="1"
                                     Width="300"
                                     Margin="2.5"
                                     TickPlacement="BottomRight" />
                                 <Slider
+                                    Value="2"
                                     Width="300"
                                     Margin="2.5"
                                     Style="{StaticResource PrimarySlider}"
                                     TickPlacement="BottomRight" />
                                 <Slider
+                                    Value="3"
                                     Width="300"
                                     Margin="2.5"
                                     Style="{StaticResource SuccessSlider}"
                                     TickPlacement="BottomRight" />
                                 <Slider
+                                    Value="4"
                                     Width="300"
                                     Margin="2.5"
                                     Style="{StaticResource WarningSlider}"
                                     TickPlacement="BottomRight" />
                                 <Slider
+                                    Value="5"
                                     Width="300"
                                     Margin="2.5"
                                     Style="{StaticResource DangerSlider}"
                                     TickPlacement="BottomRight" />
                                 <Slider
+                                    Value="6"
                                     Width="300"
                                     Margin="2.5"
                                     Style="{StaticResource InfoSlider}"
@@ -161,31 +178,37 @@
                         <GroupBox Header=" TickPlacement Both">
                             <StackPanel>
                                 <Slider
+                                    Value="1"
                                     Width="300"
                                     Margin="2.5"
                                     TickPlacement="Both" />
                                 <Slider
                                     Width="300"
+                                    Value="2"
                                     Margin="2.5"
                                     Style="{StaticResource PrimarySlider}"
                                     TickPlacement="Both" />
                                 <Slider
                                     Width="300"
+                                    Value="3"
                                     Margin="2.5"
                                     Style="{StaticResource SuccessSlider}"
                                     TickPlacement="Both" />
                                 <Slider
                                     Width="300"
+                                    Value="4"
                                     Margin="2.5"
                                     Style="{StaticResource WarningSlider}"
                                     TickPlacement="Both" />
                                 <Slider
                                     Width="300"
+                                    Value="5"
                                     Margin="2.5"
                                     Style="{StaticResource DangerSlider}"
                                     TickPlacement="Both" />
                                 <Slider
                                     Width="300"
+                                    Value="6"
                                     Margin="2.5"
                                     Style="{StaticResource InfoSlider}"
                                     TickPlacement="Both" />
