@@ -10,7 +10,7 @@
     <Color x:Key="Focus.Foreground.Color">#FF696C74</Color>
 
     <Color x:Key="Pressed.Background.Color">#FFEDEDED</Color>
-    <Color x:Key="Pressed.Border.Color">#FFA8B0C2</Color>
+    <Color x:Key="Pressed.Border.Color">#FF818DA7</Color>
     <Color x:Key="Pressed.Foreground.Color">#FF696C74</Color>
 
     <Color x:Key="Static.Background.Color">#FFFFFFFF</Color>
@@ -118,5 +118,18 @@
     <SolidColorBrush x:Key="DefaultExpanderContentBrush" Color="{StaticResource Static.Background.Color}" />
 
     <!--#endregion-->
+
+
+    <!--#region ProgressBar Colors-->
+    <Color x:Key="Static.ProgressBar.Color">#FFE7E9EE</Color>
+
+    <SolidColorBrush x:Key="Static.ProgressBar.Brush" Color="{StaticResource Static.ProgressBar.Color}" />
+    <SolidColorBrush x:Key="Static.ProgressBar.Indicator.Brush" Color="#608DA3" />
+
+
+    <Color x:Key="ProgressIndeterminateColor1">#33878787</Color>
+    <Color x:Key="ProgressIndeterminateColor2">#33959595</Color>
+    <Color x:Key="ProgressIndeterminateColor3">#4C000000</Color>
+    <Color x:Key="ProgressIndeterminateColor4">#4C000000</Color>
 
 </ResourceDictionary>

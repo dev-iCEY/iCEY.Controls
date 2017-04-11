@@ -14,8 +14,8 @@
         <StackPanel Orientation="Vertical">
             <!--#region Buttons-->
             <Expander
-                Margin="5"
                 x:Name="ExpanderButtons"
+                Margin="5"
                 Header="Buttons">
                 <StackPanel Margin="2.5" Orientation="Vertical">
                     <ItemsControl Margin="2.5" IsEnabled="{Binding ElementName=SetBtnValue, Path=IsChecked}">
@@ -197,6 +197,25 @@
                         Margin="5"
                         Content="Enable all sliders"
                         IsChecked="True" />
+                </StackPanel>
+            </Expander>
+            <!--#endregion-->
+
+            <!--#region ProgressBars-->
+            <Expander
+                Height="154"
+                Margin="5"
+                Header="Progress Bar">
+                <StackPanel>
+                    <ProgressBar
+                        Margin="10"
+                        IsIndeterminate="True"
+                        Maximum="100"
+                        Value="{Binding ElementName=SliderProgressBar, Path=Value}" />
+                    <Slider
+                        x:Name="SliderProgressBar"
+                        Margin="10"
+                        Maximum="100" />
                 </StackPanel>
             </Expander>
             <!--#endregion-->
