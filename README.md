@@ -18,9 +18,9 @@ Includes the following styles:
 At the moment the following were realized:
 * Button
 * Slider
-* Expander [ Partially ]
-* Label [ With styles ]
-* TextBlock [ With styles ]
+* Expander [ Partially realized ]
+* Label
+* TextBlock
 
 ***
 
