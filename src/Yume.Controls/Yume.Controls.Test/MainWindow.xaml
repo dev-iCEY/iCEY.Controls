@@ -5,13 +5,15 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     Title="MainWindow"
-    Width="525"
-    Height="350"
     MinWidth="640"
     MinHeight="480"
+    ResizeMode="CanResize"
+    SnapsToDevicePixels="False"
+    WindowStartupLocation="CenterScreen"
     mc:Ignorable="d">
     <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
         <StackPanel Orientation="Vertical">
+
             <!--#region Buttons-->
             <Expander
                 x:Name="ExpanderButtons"
@@ -60,6 +62,7 @@
                 </StackPanel>
             </Expander>
             <!--#endregion-->
+
             <!--#region Sliders-->
             <Expander
                 x:Name="ExpanderSliders"
@@ -295,6 +298,7 @@
                 </StackPanel>
             </Expander>
             <!--#endregion-->
+
         </StackPanel>
     </ScrollViewer>
 </Window>

@@ -80,20 +80,11 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Resource Include="Fonts\OpenSans\LICENSE.txt" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Resource Include="Fonts\OpenSans\OpenSans-Bold.ttf" />
-    <Resource Include="Fonts\OpenSans\OpenSans-BoldItalic.ttf" />
-    <Resource Include="Fonts\OpenSans\OpenSans-ExtraBold.ttf" />
-    <Resource Include="Fonts\OpenSans\OpenSans-ExtraBoldItalic.ttf" />
-    <Resource Include="Fonts\OpenSans\OpenSans-Italic.ttf" />
-    <Resource Include="Fonts\OpenSans\OpenSans-Light.ttf" />
-    <Resource Include="Fonts\OpenSans\OpenSans-LightItalic.ttf" />
-    <Resource Include="Fonts\OpenSans\OpenSans-Regular.ttf" />
-    <Resource Include="Fonts\OpenSans\OpenSans-Semibold.ttf" />
-    <Resource Include="Fonts\OpenSans\OpenSans-SemiboldItalic.ttf" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -138,7 +129,16 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Fonts\OpenSans\LICENSE.txt" />
+    <Resource Include="Fonts\OpenSans\OpenSans-Bold.ttf" />
+    <Resource Include="Fonts\OpenSans\OpenSans-BoldItalic.ttf" />
+    <Resource Include="Fonts\OpenSans\OpenSans-ExtraBold.ttf" />
+    <Resource Include="Fonts\OpenSans\OpenSans-ExtraBoldItalic.ttf" />
+    <Resource Include="Fonts\OpenSans\OpenSans-Italic.ttf" />
+    <Resource Include="Fonts\OpenSans\OpenSans-Light.ttf" />
+    <Resource Include="Fonts\OpenSans\OpenSans-LightItalic.ttf" />
+    <Resource Include="Fonts\OpenSans\OpenSans-Regular.ttf" />
+    <Resource Include="Fonts\OpenSans\OpenSans-Semibold.ttf" />
+    <Resource Include="Fonts\OpenSans\OpenSans-SemiboldItalic.ttf" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
