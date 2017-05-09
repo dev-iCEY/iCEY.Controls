@@ -8,5 +8,6 @@
         <ResourceDictionary Source="./Controls/ProgressBars.xaml" />
         <ResourceDictionary Source="./Controls/Typography/TextBlocks.xaml" />
         <ResourceDictionary Source="./Controls/Typography/Labels.xaml" />
+        <ResourceDictionary Source="./Controls/ContextMenu.xaml" />
     </ResourceDictionary.MergedDictionaries>
 </ResourceDictionary>
