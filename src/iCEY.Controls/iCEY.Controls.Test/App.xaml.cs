@@ -6,7 +6,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
 
-namespace Yume.Controls.Test
+namespace iCEY.Controls.Test
 {
     /// <summary>
     /// Логика взаимодействия для App.xaml

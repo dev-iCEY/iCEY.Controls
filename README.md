@@ -1,4 +1,4 @@
-# Yume.Controls Library
+# iCEY.Controls Library
 
 Includes the following styles:
 * Button

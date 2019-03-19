@@ -1,6 +1,6 @@
 ﻿using System.Windows;
 
-namespace Yume.Controls.Test
+namespace iCEY.Controls.Test
 {
     /// <summary>
     /// Логика взаимодействия для MainWindow.xaml

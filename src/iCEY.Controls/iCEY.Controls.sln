@@ -1,11 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Blend for Visual Studio 15
-VisualStudioVersion = 15.0.26403.0
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28711.60
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yume.Controls", "Yume.Controls\Yume.Controls.csproj", "{D73C341B-FE85-41E5-9AAA-6C52F853189A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "iCEY.Controls", "iCEY.Controls\iCEY.Controls.csproj", "{D73C341B-FE85-41E5-9AAA-6C52F853189A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yume.Controls.Test", "Yume.Controls.Test\Yume.Controls.Test.csproj", "{17864718-349E-4E6E-86C4-9D9C5B66E839}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "iCEY.Controls.Test", "iCEY.Controls.Test\iCEY.Controls.Test.csproj", "{17864718-349E-4E6E-86C4-9D9C5B66E839}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -34,5 +34,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {06B91726-63CB-40D3-9E6D-374D7132E5A4}
 	EndGlobalSection
 EndGlobal
